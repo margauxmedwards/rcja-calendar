@@ -319,6 +319,7 @@
         currentRegion = regionKey;
         const region = regionsData[regionKey];
         const events = region.events || [];
+        const regionTitle = stateConfig.subRegions[regionKey]?.title || regionKey;
 
         // Update active button
         document.querySelectorAll('.region-btn').forEach(el => {
@@ -349,7 +350,7 @@
 
         document.getElementById("display-area").innerHTML = `
             <div class="event-card">
-                <h2>${escapeHtml(region.title)}</h2>
+                <h2>${escapeHtml(regionTitle)}</h2>
                 ${eventsHtml}
             </div>`;
     }
