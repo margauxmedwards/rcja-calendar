@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+
+    <title id="page-title">RCJA – Regional Calendar</title>
+
+    <style>
+        body {
+            background-image: url("/homeimage.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .header-bar {
+            max-width: 950px;
+            margin: 0 auto 20px;
+            padding: 15px 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .header-bar h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #192f59;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #rcja-state-interactive {
+            max-width: 950px;
+            margin: 0 auto;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #ffffff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 1px solid #eee;
+        }
+
+        .map-container {
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 500px;
+        }
+
+        .region-sidebar {
+            flex: 1;
+            min-width: 260px;
+            background: #192f59;
+            padding: 30px 20px;
+            color: white;
+        }
+
+        .region-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 12px 0;
+            border: 2px solid rgba(157, 189, 56, 0.3);
+            border-radius: 8px;
+            background: transparent;
+            color: white;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .region-btn:hover {
+            background: rgba(157, 189, 56, 0.1);
+            border-color: #9dbd38;
+        }
+
+        .region-btn.active {
+            background: #9dbd38;
+            color: #192f59;
+            border-color: #9dbd38;
+            box-shadow: 0 4px 12px rgba(157, 189, 56, 0.3);
+        }
+
+        .event-display {
+            flex: 2;
+            min-width: 320px;
+            padding: 45px;
+            background: #fafafa;
+        }
+
+        .event-card h2 {
+            color: #192f59;
+            margin-top: 0;
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+        }
+
+        .event-item {
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            background: white;
+            border-radius: 8px;
+            border-left: 6px solid #9dbd38;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .event-item.state-highlight {
+            background: #192f59 !important;
+            color: white !important;
+            border-left-color: #9dbd38;
+        }
+
+        .event-item.state-highlight .date-tag {
+            color: #9dbd38;
+            background: rgba(255,255,255,0.1);
+        }
+
+        .event-item.state-highlight .event-title {
+            color: white;
+        }
+
+        .date-tag {
+            font-weight: 800;
+            color: #192f59;
+            background: rgba(157, 189, 56, 0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+
+        .event-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #333;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .event-desc {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 8px;
+        }
+
+        .event-item.state-highlight .event-desc {
+            color: rgba(255,255,255,0.9);
+        }
+
+        .event-link {
+            margin-top: 10px;
+            display: inline-block;
+            color: #192f59;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .event-link:hover {
+            text-decoration: underline;
+        }
+
+        .event-item.state-highlight .event-link {
+            color: #9dbd38;
+        }
+
+        .placeholder-text {
+            text-align: center;
+            color: #192f59;
+            padding-top: 100px;
+            opacity: 0.8;
+        }
+
+        .robot-icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .no-events {
+            color: #666;
+            font-style: italic;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .loading-spinner {
+            text-align: center;
+            padding: 60px 20px;
+            color: #192f59;
+        }
+
+        .footer-info {
+            text-align: center;
+            padding: 15px;
+            color: #999;
+            font-size: 0.85rem;
+            border-top: 1px solid #eee;
+            background: white;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .event-card {
+            animation: slideIn 0.4s ease-out;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(157, 189, 56, 0.2);
+            border-top-color: #9dbd38;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @media (max-width: 768px) {
+            .header-bar {
+                padding: 15px;
+            }
+            
+            .header-bar h1 {
+                font-size: 1.2rem;
+            }
+
+            .region-sidebar {
+                padding: 20px 15px;
+            }
+
+            .event-display {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-bar">
+        <h1 id="page-header">
+            <img src="/favicon-32x32.png" alt="RCJA" style="vertical-align: middle;">
+            <span>Loading...</span>
+        </h1>
+    </div>
+
+    <div id="rcja-state-interactive">
+        <div class="map-container">
+            <div class="region-sidebar">
+                <h3 id="sidebar-title" style="margin-top:0; color: #9dbd38; letter-spacing: 1px;">LOADING...</h3>
+                <div id="region-buttons">
+                    <!-- Region buttons will be inserted here -->
+                </div>
+            </div>
+
+            <div class="event-display" id="display-area">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Loading events…</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-info" id="last-updated">
+            <span>⏱️ –</span>
+            <span style="margin-left: 15px;">·</span>
+            <a href="/sync" style="margin-left: 15px; color: #999; text-decoration: none;">Sync to Calendar</a>
+        </div>
+    </div>
+
+<script>
+    // Get state code from URL path
+    const pathParts = window.location.pathname.split('/').filter(p => p);
+    const stateCode = (pathParts[0] || 'QLD').toUpperCase();
+    
+    let stateConfig = null;
+    let regionsData = null;
+    let currentRegion = null;
+
+    function escapeHtml(str) {
+        return String(str)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;");
+    }
+
+    function showRegion(regionKey) {
+        if (!regionsData || !regionsData[regionKey]) {
+            document.getElementById("display-area").innerHTML = `
+                <div class="placeholder-text">
+                    <div class="robot-icon">🤖</div>
+                    <p>No data available for this region.</p>
+                </div>`;
+            return;
+        }
+
+        currentRegion = regionKey;
+        const region = regionsData[regionKey];
+        const events = region.events || [];
+
+        // Update active button
+        document.querySelectorAll('.region-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        event.currentTarget.classList.add('active');
+
+        let eventsHtml;
+        if (events.length === 0) {
+            eventsHtml = '<div class="no-events">No upcoming events for this region</div>';
+        } else {
+            eventsHtml = events.map(evt => {
+                const stateClass = evt.highlight ? ' state-highlight' : '';
+                const stateIcon = evt.highlight ? '🏆 ' : '';
+                const registerLink = evt.registrationURL
+                    ? `<a href="${escapeHtml(evt.registrationURL)}" target="_blank" rel="noopener" class="event-link">Register →</a>`
+                    : "";
+                
+                return `
+                    <div class="event-item${stateClass}">
+                        <span class="date-tag">${escapeHtml(evt.date)}</span>
+                        <span class="event-title">${stateIcon}${escapeHtml(evt.name)}</span>
+                        <div class="event-desc">${escapeHtml(evt.desc)}</div>
+                        ${registerLink}
+                    </div>`;
+            }).join("");
+        }
+
+        document.getElementById("display-area").innerHTML = `
+            <div class="event-card">
+                <h2>${escapeHtml(region.title)}</h2>
+                ${eventsHtml}
+            </div>`;
+    }
+
+    function loadConfig() {
+        $.ajax({
+            url: `/api/${stateCode}/config`,
+            type: "GET",
+            dataType: "json",
+            success: function (config) {
+                stateConfig = config;
+                
+                // Update page title and header
+                document.getElementById("page-title").textContent = config.title;
+                document.getElementById("page-header").innerHTML = `
+                    <img src="/favicon-32x32.png" alt="RCJA" style="vertical-align: middle;">
+                    <span>${escapeHtml(config.title)}</span>
+                `;
+                
+                // Update sidebar title
+                document.getElementById("sidebar-title").textContent = `${config.year} SEASON`;
+                
+                // Create region buttons
+                const buttonsHtml = config.regionOrder.map(regionKey => {
+                    const title = config.regionTitles[regionKey];
+                    return `<button class="region-btn" onclick="showRegion('${regionKey}')">${escapeHtml(title)}</button>`;
+                }).join("");
+                document.getElementById("region-buttons").innerHTML = buttonsHtml;
+                
+                // Load events data
+                loadData();
+            },
+            error: function (err) {
+                document.getElementById("page-header").innerHTML = `
+                    <img src="/favicon-32x32.png" alt="RCJA" style="vertical-align: middle;">
+                    <span>Error</span>
+                `;
+                document.getElementById("display-area").innerHTML = `
+                    <div class="placeholder-text">
+                        <div style="color: #d32f2f; margin-bottom: 20px;">⚠️</div>
+                        <p style="color: #d32f2f;">State not found</p>
+                        <small>${escapeHtml((err.responseJSON && err.responseJSON.error) || `Regional page not available for: ${stateCode}`)}</small>
+                    </div>`;
+            }
+        });
+    }
+
+    function loadData() {
+        document.getElementById("display-area").innerHTML = `
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Loading events…</p>
+            </div>`;
+
+        $.ajax({
+            url: `/api/${stateCode}/regions`,
+            type: "GET",
+            dataType: "json",
+            success: function (data) {
+                regionsData = data;
+                document.getElementById("last-updated").innerHTML =
+                    '⏱️ Last updated: ' + new Date().toLocaleTimeString("en-AU") +
+                    '<span style="margin-left: 15px;">·</span>' +
+                    '<a href="/sync" style="margin-left: 15px; color: #999; text-decoration: none;">Sync to Calendar</a>';
+                
+                // Show placeholder with instructions
+                document.getElementById("display-area").innerHTML = `
+                    <div class="placeholder-text">
+                        <div class="robot-icon">🤖</div>
+                        <p>Select a region to explore the ${stateConfig.year} Roadmap.</p>
+                        <small>Click a region on the left to view upcoming events</small>
+                    </div>`;
+            },
+            error: function (err) {
+                document.getElementById("display-area").innerHTML = `
+                    <div class="placeholder-text">
+                        <div style="color: #d32f2f; margin-bottom: 20px;">⚠️</div>
+                        <p style="color: #d32f2f;">Error loading events</p>
+                        <small>${escapeHtml((err.responseJSON && err.responseJSON.error) || "Failed to load events. Please try again.")}</small>
+                    </div>`;
+            }
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        loadConfig();
+        // Auto-refresh every 5 minutes
+        setInterval(loadData, 5 * 60 * 1000);
+    });
+</script>
+</body>
+</html>
