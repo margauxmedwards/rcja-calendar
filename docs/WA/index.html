@@ -427,6 +427,14 @@
             type: "GET",
             dataType: "json",
             success: function (events) {
+                // Filter to only show future/ongoing events
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                const futureEvents = events.filter(event => {
+                    const eventDate = event.endDate ? new Date(event.endDate) : new Date(event.startDate);
+                    return eventDate >= today;
+                });
+                
                 // Categorize events into regions based on keywords
                 regionsData = {};
                 
@@ -436,7 +444,7 @@
                 }
                 
                 // Categorize each event
-                events.forEach(event => {
+                futureEvents.forEach(event => {
                     const eventName = (event.name || "").toLowerCase();
                     const venue = event.venue ? `${event.venue.name || ''} ${event.venue.address || ''}`.toLowerCase() : '';
                     const eventText = eventName + " " + venue;
@@ -481,7 +489,7 @@
                 }
                 
                 // Debug logging
-                console.log('Total events loaded:', events.length);
+                console.log('Total events loaded:', futureEvents.length, '(filtered from', events.length, 'total)');
                 console.log('Events by region:', Object.entries(regionsData).map(([key, data]) => `${key}: ${data.events.length}`).join(', '));
                 
                 document.getElementById("last-updated").innerHTML =
