@@ -186,6 +186,19 @@
     const eventTypes = ["Competitions", "Workshops"];
     const regions = ["NSW", "QLD", "SA", "TAS", "VIC", "WA", "ACT", "NT", "NAT", "NZ"];
     let otherRegions = [];
+    
+    // Cache for loaded event data
+    let cachedEventData = {};
+    const stateDataMap = {
+        "QLD": "qld",
+        "NSW": "nsw",
+        "VIC": "vic",
+        "SA": "sa",
+        "WA": "wa",
+        "TAS": "tas",
+        "ACT": "act",
+        "NT": "nt"
+    };
 
     const urlParams = new URLSearchParams(window.location.search);
     const requestedRegions = urlParams.get('regions');
@@ -347,52 +360,119 @@
         updateEventSources();
     }
 
-    function addEventSource(apiURL, eventColor) {
+    function addEventSource(region, eventColor, inactiveEventFilters) {
+        // Check if we have local data for this state
+        const stateKey = stateDataMap[region];
+        if (!stateKey) {
+            console.log(`No local data available for region: ${region}`);
+            return;
+        }
+        
         calendar.addEventSource({
-            id: apiURL,
+            id: region,
             events: function (info, successCallback, failureCallback) {
+                // Check cache first
+                if (cachedEventData[stateKey]) {
+                    const eventData = transformEventsForCalendar(cachedEventData[stateKey], eventColor, region, inactiveEventFilters);
+                    successCallback(eventData);
+                    return;
+                }
+                
+                // Load from local JSON file
                 $.ajax({
-                    url: apiURL,
+                    url: `data/${stateKey}-events.json`,
                     type: 'GET',
                     dataType: 'json',
                     success: function (data) {
-                        let eventData = [];
-                        for (const event of data) {
-                            eventData.push({
-                                title: event.title,
-                                start: event.start,
-                                end: event.end,
-                                allDay: event.allDay,
-                                color: eventColor,
-                                eventDetails: event,
-                            });
-                        }
+                        cachedEventData[stateKey] = data;
+                        const eventData = transformEventsForCalendar(data, eventColor, region, inactiveEventFilters);
                         successCallback(eventData);
                     },
                     error: function (err) {
-                        console.log(err);
+                        console.log(`Error loading events for ${region}:`, err);
                         failureCallback(err);
                     }
                 });
             },
         });
     }
+    
+    function transformEventsForCalendar(events, eventColor, region, inactiveEventFilters = []) {
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        
+        return events
+            .filter(event => {
+                // Filter to only future/ongoing events
+                const eventDate = event.endDate ? new Date(event.endDate) : new Date(event.startDate);
+                if (eventDate < today) return false;
+                
+                // Filter by event type if needed
+                const eventType = event.eventType || 'competition';
+                if (inactiveEventFilters.includes('competitions') && eventType === 'competition') return false;
+                if (inactiveEventFilters.includes('workshops') && eventType === 'workshop') return false;
+                
+                return true;
+            })
+            .map(event => {
+                const title = event.name || 'Untitled Event';
+                const venue = event.venue ? `${event.venue.name || ''}, ${event.venue.address || ''}` : 'TBC';
+                const startDate = event.startDate || '';
+                const endDate = event.endDate || event.startDate || '';
+                const registrationsOpenDate = event.registrationsOpenDate || 'TBC';
+                const registrationsCloseDate = event.registrationsCloseDate || 'TBC';
+                
+                // Format available divisions
+                const availableDivisions = event.availabledivisions 
+                    ? event.availabledivisions.map(d => d.name).join(', ') 
+                    : 'Not specified';
+                
+                // Format enquiries
+                const enquiries = event.directEnquiriesTo 
+                    ? `${event.directEnquiriesTo.fullName} (${event.directEnquiriesTo.email})` 
+                    : 'See registration link';
+                
+                return {
+                    title: title,
+                    start: startDate,
+                    end: endDate,
+                    allDay: true,
+                    color: eventColor,
+                    eventDetails: {
+                        title: title,
+                        startDate: startDate,
+                        endDate: endDate,
+                        registrationsOpenDate: registrationsOpenDate,
+                        registrationsCloseDate: registrationsCloseDate,
+                        venue: venue,
+                        eventType: event.eventType || 'competition',
+                        registrationURL: event.registrationURL || '',
+                        availableDivisions: availableDivisions,
+                        enquiries: enquiries,
+                        bleachedEventDetails: event.bleachedEventDetails || '',
+                        region: region
+                    },
+                };
+            });
+    }
 
     function updateEventSources() {
         const activeRegions = regions.filter(region => document.querySelector(`a[data-region="${region}"]`).classList.contains('active'));
         const activeOtherRegions = document.querySelector(`a[data-region="_OTHER"]`)?.classList.contains('active') ? otherRegions : [];
         
-        const inactiveEventFilters = eventTypes.filter(type => document.querySelector(`a[data-event-type="${type}"]`).classList.contains('active') === false);
-        const inactiveEventFiltersQuery = inactiveEventFilters.length > 0 ? `&hide=${inactiveEventFilters.join(',').toLowerCase()}` : '';
+        const inactiveEventFilters = eventTypes.filter(type => document.querySelector(`a[data-event-type="${type}"]`).classList.contains('active') === false).map(t => t.toLowerCase());
 
         const requestedEventSources = [];
         for (const region of [...activeRegions, ...activeOtherRegions]) {
             const isOtherRegion = activeOtherRegions.includes(region);
-
-            requestedEventSources.push({
-                url: `https://rcja.app/calendar/api/events/json?regions=${region}${inactiveEventFiltersQuery}`,
-                color: isOtherRegion ? regionColours["_OTHER"] : regionColours[region],
-            })
+            
+            // Only add regions we have data for
+            if (stateDataMap[region]) {
+                requestedEventSources.push({
+                    url: region, // Use region as ID
+                    color: isOtherRegion ? regionColours["_OTHER"] : regionColours[region],
+                })
+            }
         }
 
         const requestedEventSourceIDs = requestedEventSources.map(source => source.url);
@@ -407,7 +487,7 @@
         const eventSourcesToAdd = requestedEventSources.filter(source => !currentEventSourceIDs.includes(source.url));
 
         for (const source of eventSourcesToAdd) {
-            addEventSource(source.url, source.color);
+            addEventSource(source.url, source.color, inactiveEventFilters);
         }
     }
 
@@ -462,7 +542,10 @@
             }
         }
 
-        // Allow the button to render first...
+        // Remove all event sources so they get re-added with updated filters
+        calendar.getEventSources().forEach(source => source.remove());
+        
+        // Allow the button to render first, then update sources
         setTimeout(updateEventSources, 0);
     }
 
