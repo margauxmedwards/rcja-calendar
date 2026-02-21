@@ -355,10 +355,25 @@
 
     function loadConfig() {
         $.ajax({
-            url: `https://rcja.app/calendar/api/${stateCode}/config`,
+            url: '../config.json',
             type: "GET",
             dataType: "json",
-            success: function (config) {
+            success: function (allConfigs) {
+                const config = allConfigs[stateCode];
+                if (!config || !config.enabled) {
+                    document.getElementById("page-header").innerHTML = `
+                        <img src="../favicon-32x32.png" alt="RCJA" style="vertical-align: middle;">
+                        <span>Error</span>
+                    `;
+                    document.getElementById("display-area").innerHTML = `
+                        <div class="placeholder-text">
+                            <div style="color: #d32f2f; margin-bottom: 20px;">⚠️</div>
+                            <p style="color: #d32f2f;">State not found</p>
+                            <small>${escapeHtml(`Regional page not available for: ${stateCode}`)}</small>
+                        </div>`;
+                    return;
+                }
+                
                 stateConfig = config;
                 
                 // Update page title and header
@@ -369,11 +384,13 @@
                 `;
                 
                 // Update sidebar title
-                document.getElementById("sidebar-title").textContent = `${config.year} SEASON`;
+                const year = new Date().getFullYear();
+                document.getElementById("sidebar-title").textContent = `${year} SEASON`;
                 
                 // Create region buttons
                 const buttonsHtml = config.regionOrder.map(regionKey => {
-                    const title = config.regionTitles[regionKey];
+                    const regionConfig = config.subRegions[regionKey];
+                    const title = regionConfig ? regionConfig.title : regionKey;
                     return `<button class="region-btn" onclick="showRegion(this, '${regionKey}')">${escapeHtml(title)}</button>`;
                 }).join("");
                 document.getElementById("region-buttons").innerHTML = buttonsHtml;
@@ -389,8 +406,8 @@
                 document.getElementById("display-area").innerHTML = `
                     <div class="placeholder-text">
                         <div style="color: #d32f2f; margin-bottom: 20px;">⚠️</div>
-                        <p style="color: #d32f2f;">State not found</p>
-                        <small>${escapeHtml((err.responseJSON && err.responseJSON.error) || `Regional page not available for: ${stateCode}`)}</small>
+                        <p style="color: #d32f2f;">Unable to load configuration</p>
+                        <small>${escapeHtml((err.responseJSON && err.responseJSON.error) || 'Failed to load state configuration.')}</small>
                     </div>`;
             }
         });
@@ -404,21 +421,64 @@
             </div>`;
 
         $.ajax({
-            url: `https://rcja.app/calendar/api/${stateCode}/regions`,
+            url: `https://enter.robocupjunior.org.au/api/v1/public/states/${stateCode}/allEventsDetailed/`,
             type: "GET",
             dataType: "json",
-            success: function (data) {
-                regionsData = data;
+            success: function (events) {
+                // Categorize events into regions based on keywords
+                regionsData = {};
+                
+                // Initialize all regions
+                for (const [key, region] of Object.entries(stateConfig.subRegions)) {
+                    regionsData[key] = { events: [] };
+                }
+                
+                // Categorize each event
+                events.forEach(event => {
+                    const eventName = (event.name || "").toLowerCase();
+                    const eventDesc = (event.description || "").toLowerCase();
+                    const eventText = eventName + " " + eventDesc;
+                    
+                    let categorized = false;
+                    
+                    // Check keywords for each region
+                    for (const [key, region] of Object.entries(stateConfig.subRegions)) {
+                        if (region.keywords && region.keywords.some(keyword => eventText.includes(keyword.toLowerCase()))) {
+                            regionsData[key].events.push({
+                                name: event.name,
+                                date: event.date ? new Date(event.date).toLocaleDateString("en-AU", { month: 'short', day: 'numeric' }) : "TBD",
+                                desc: event.description || "",
+                                registrationURL: event.registration_url,
+                                highlight: false
+                            });
+                            categorized = true;
+                            break;
+                        }
+                    }
+                    
+                    // If not categorized, add to default region
+                    if (!categorized && stateConfig.defaultRegion) {
+                        regionsData[stateConfig.defaultRegion].events.push({
+                            name: event.name,
+                            date: event.date ? new Date(event.date).toLocaleDateString("en-AU", { month: 'short', day: 'numeric' }) : "TBD",
+                            desc: event.description || "",
+                            registrationURL: event.registration_url,
+                            highlight: false
+                        });
+                    }
+                });
+                
                 document.getElementById("last-updated").innerHTML =
                     '⏱️ Last updated: ' + new Date().toLocaleTimeString("en-AU") +
                     '<span style="margin-left: 15px;">·</span>' +
                     '<a href="../sync/" style="margin-left: 15px; color: #999; text-decoration: none;">Sync to Calendar</a>';
                 
                 // Show placeholder with instructions
+                const year = new Date().getFullYear();
                 document.getElementById("display-area").innerHTML = `
                     <div class="placeholder-text">
                         <div class="robot-icon">🤖</div>
-                        <p>Select a region to explore the ${stateConfig.year} Roadmap.</p>
+                        <p>Select a region to explore the ${year} Roadmap.</p>
                         <small>Click a region on the left to view upcoming events</small>
                     </div>`;
             },
