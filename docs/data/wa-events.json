@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Perth State Competition",
+    "startDate": "2024-04-05T09:00:00",
+    "venue": {
+      "name": "Perth Convention Centre",
+      "address": "Perth WA 6000"
+    },
+    "registrationURL": "https://enter.robocupjunior.org.au"
+  }
+]

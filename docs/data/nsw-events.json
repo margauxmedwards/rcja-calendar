@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Sydney State Competition",
+    "startDate": "2024-03-20T09:00:00",
+    "venue": {
+      "name": "UTS Ultimo Campus",
+      "address": "Ultimo NSW 2007"
+    },
+    "registrationURL": "https://enter.robocupjunior.org.au"
+  },
+  {
+    "id": 2,
+    "name": "Newcastle Regional Competition",
+    "startDate": "2024-02-25T10:00:00",
+    "venue": {
+      "name": "Newcastle Grammar School",
+      "address": "Newcastle NSW 2300"
+    },
+    "registrationURL": "https://enter.robocupjunior.org.au"
+  }
+]

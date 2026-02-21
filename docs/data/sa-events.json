@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Adelaide State Competition",
+    "startDate": "2024-03-30T09:00:00",
+    "venue": {
+      "name": "Adelaide Convention Centre",
+      "address": "Adelaide SA 5000"
+    },
+    "registrationURL": "https://enter.robocupjunior.org.au"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Melbourne State Competition",
+    "startDate": "2024-03-25T09:00:00",
+    "venue": {
+      "name": "Docklands Stadium",
+      "address": "Docklands VIC 3008"
+    },
+    "registrationURL": "https://enter.robocupjunior.org.au"
+  }
+]

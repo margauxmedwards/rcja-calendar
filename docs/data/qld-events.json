@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Brisbane State Competition",
+    "startDate": "2024-03-15T09:00:00",
+    "venue": {
+      "name": "Brisbane Convention Centre",
+      "address": "South Brisbane QLD 4101"
+    },
+    "registrationURL": "https://enter.robocupjunior.org.au"
+  },
+  {
+    "id": 2,
+    "name": "Toowoomba Regional Competition",
+    "startDate": "2024-02-20T10:00:00",
+    "venue": {
+      "name": "Toowoomba Grammar School",
+      "address": "Darling Heights QLD 4350"
+    },
+    "registrationURL": "https://enter.robocupjunior.org.au"
+  },
+  {
+    "id": 3,
+    "name": "Gold Coast Regional Qualifier",
+    "startDate": "2024-03-01T08:30:00",
+    "venue": {
+      "name": "Southport School",
+      "address": "Southport QLD 4215"
+    },
+    "registrationURL": "https://enter.robocupjunior.org.au"
+  }
+]
