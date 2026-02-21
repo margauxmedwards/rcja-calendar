@@ -86,6 +86,89 @@ Make keywords as specific as possible to avoid miscategorization:
 
 Set `enabled: false` in the state's configuration to temporarily disable its regional calendar page while keeping the configuration.
 
+## Embedding into State Websites
+
+The regional calendar pages are designed to be embedded into state RoboCup websites using iframes.
+
+### Basic Embed Code
+
+```html
+<iframe 
+  src="https://rcja.app/calendar/qld" 
+  width="100%" 
+  height="700" 
+  frameborder="0"
+  style="border: none; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+</iframe>
+```
+
+Replace `qld` with your state code (e.g., `vic`, `nsw`, `sa`, `wa`).
+
+### Responsive Embed
+
+For a responsive embed that adjusts to the page width:
+
+```html
+<div style="position: relative; width: 100%; max-width: 1000px; margin: 20px auto;">
+  <iframe 
+    src="https://rcja.app/calendar/qld" 
+    width="100%" 
+    height="700" 
+    frameborder="0"
+    style="border: none; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  </iframe>
+</div>
+```
+
+### WordPress Embed
+
+For WordPress sites, you can use the HTML block and paste the embed code directly, or use this shortcode approach:
+
+```html
+<!-- Add this to your page in HTML mode -->
+<iframe src="https://rcja.app/calendar/qld" width="100%" height="700" frameborder="0"></iframe>
+```
+
+### Considerations
+
+- **Height**: Adjust the `height` attribute based on your needs (700-900px recommended)
+- **Mobile**: The embedded page is fully responsive and works on mobile devices
+- **Updates**: The calendar automatically updates every 5 minutes, so embedded pages always show current data
+- **No Background**: The page includes its own background image, so it looks good when embedded
+- **Sync Link**: Users can click "Sync to Calendar" within the embed to add events to their personal calendar
+
+### Example URLs
+
+- Queensland: `https://rcja.app/calendar/qld`
+- Victoria: `https://rcja.app/calendar/vic`
+- New South Wales: `https://rcja.app/calendar/nsw`
+- South Australia: `https://rcja.app/calendar/sa`
+- Western Australia: `https://rcja.app/calendar/wa`
+
+### Custom Styling (Optional)
+
+If you want the embed to blend better with your site, wrap it in a container:
+
+```html
+<div class="rcja-calendar-embed">
+  <iframe 
+    src="https://rcja.app/calendar/qld" 
+    width="100%" 
+    height="700" 
+    frameborder="0"
+    style="border: none;">
+  </iframe>
+</div>
+
+<style>
+.rcja-calendar-embed {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+</style>
+```
+
 ## Testing
 
 1. Add/modify configuration in `stateConfig.js`
