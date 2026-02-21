@@ -1,12 +1,506 @@
 [
   {
-    "id": 1,
-    "name": "Perth State Competition",
-    "startDate": "2024-04-05T09:00:00",
-    "venue": {
-      "name": "Perth Convention Centre",
-      "address": "Perth WA 6000"
+    "id": 252,
+    "state": 8,
+    "name": "Robocup Junior Season Launch and Workshops Event",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2025-03-20",
+    "endDate": "2025-03-20",
+    "registrationsOpenDate": "2025-02-13",
+    "registrationsCloseDate": "2025-03-19",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": null,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "RoboCup Junior WA",
+      "email": "wa@robocupjunior.org.au"
     },
-    "registrationURL": "https://enter.robocupjunior.org.au"
+    "venue": {
+      "name": "All Saints' College",
+      "address": "Ewing Ave, Bull Creek WA 6149"
+    },
+    "bleachedEventDetails": "Time: 4:00 pm - 6:00 pm: We hope to see everyone at the Launch of the 2025 Robocup Junior year. This is where you will hear about the events we have planned for the year. The event will have an introductory presentation and then break out into workshop groups for each of the challenges: OnStage Performance, Rescue Line, Rescue Maze and Soccer.\n\nStudents are welcome to attend, but this event is targeted for teachers and mentors.\n\nMaterials for Launch can be found at https://goo.gl/4sSCpr",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/EventBannerImages/EventBannerImage_281990e2-8913-452e-8a3d-50067808ba38.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/252",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Intermediate Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Lightweight Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 251,
+    "state": 8,
+    "name": "Perth Metro Event",
+    "eventType": "competition",
+    "cmsEventId": "25_WA_PERTH_40C",
+    "startDate": "2025-06-14",
+    "endDate": "2025-06-14",
+    "registrationsOpenDate": "2025-03-21",
+    "registrationsCloseDate": "2025-06-08",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 50,
+    "paymentDueDate": "2025-06-11",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 50,
+    "workshopStudentEntryFee": 50,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "RoboCup Junior WA",
+      "email": "wa@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "All Saints' College",
+      "address": "Ewing Ave, Bull Creek WA 6149"
+    },
+    "bleachedEventDetails": "Time: 9:00 am to 4:00 pm. Doors open at 8:30 am.\n\nCome along for the day, join workshops, get expert advice and test yourself on the different courses. It’s not too late to start getting your teams together. You're not the only group to still have your robots in parts just waiting to be assembled!\n\nCome for the whole day. This is a fantastic opportunity to participate in workshops, listen to experts and get help with those tricky parts that just aren't coming together.\n\nWe will not be running a competition. Instead, a performance floor, soccer tables and maze and line rescue challenges will be ready for you to try. You can just try things out or asked to be timed.\n\nDownload the <a href=\"https://www.robocupjunior.org.au/wp-content/uploads/2025/06/Perth-Metro-Event-2025-Information-Pack-updated.zip\">Perth Metro Event 2025 Information Pack (Updated)</a> here.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/EventBannerImages/EventBannerImage_a2d22f4d-8569-4d86-80e8-7413a7bbdab1.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/251",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Intermediate Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Lightweight Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 267,
+    "state": 8,
+    "name": "Bunbury Regional Robocup Junior Workshop & Event",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2025-06-28",
+    "endDate": "2025-06-28",
+    "registrationsOpenDate": "2025-03-21",
+    "registrationsCloseDate": "2025-06-22",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "RoboCup Junior WA",
+      "email": "wa@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "City of Bunbury Library",
+      "address": "2 Parkfield St, Bunbury, 6230"
+    },
+    "bleachedEventDetails": "* Time: 9:30 am till 3:00 pm\n* Who is presenting: Volunteers from the Robocup Junior WA State Committee.\n* What to bring: The robot you've been building. You need to have at least a basic robot built and coded to work in your chosen category. The robot has to be built and coded by the students.\n*Categories: All levels of OnStage, Line Rescue, Maze Rescue and Soccer will be available. This is your chance to give the various courses a try and to get some help with improving your robot and coding.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/EventBannerImages/EventBannerImage_d42a1346-52b8-4eea-ac0d-c603446b2900.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/267",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Intermediate Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Lightweight Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 254,
+    "state": 8,
+    "name": "RoboCup Junior WA State Event",
+    "eventType": "competition",
+    "cmsEventId": "25_WA_ROBOC_43A",
+    "startDate": "2025-09-13",
+    "endDate": "2025-09-14",
+    "registrationsOpenDate": "2025-06-16",
+    "registrationsCloseDate": "2025-09-05",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 130,
+    "paymentDueDate": "2025-09-05",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 110,
+    "workshopStudentEntryFee": 110,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "RoboCup Junior WA",
+      "email": "wa@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Edith Cowan University (Mount Lawley)",
+      "address": "Building 3, 2 Bradford Street, MOUNT LAWLEY WA 6050"
+    },
+    "bleachedEventDetails": "<ul><b>Downloads:</b></ul><ul><li><a href=\"https://www.robocupjunior.org.au/wp-content/uploads/2025/08/RCJWA2025_Information_Pack.pdf\">RCJWA State Event 2025 Information Pack</a></li>\n<li><a href=\"https://www.robocupjunior.org.au/wp-content/uploads/2025/08/RCJWA2025_Mentor_Declaration.pdf\">RCJWA State Event 2025 Mentor Declaration</a></li><li><a href=\"https://www.robocupjunior.org.au/wp-content/uploads/2025/08/RCJWA2025_Media_Release_Form.pdf\">RCJWA State Event 2025 Media Release</a></li>\n<li><a href=\"https://www.robocupjunior.org.au/wp-content/uploads/2025/09/WA-Finalists-2025.pdf\">RCJWA State Event 2025 Finalists</a></li>\n<li><a href=\"https://www.robocupjunior.org.au/wp-content/uploads/2025/09/WA-Winners-2025.pdf\">RCJWA State Event 2025 Winners</a></li>\n</ul><ul><b>👋 VOLUNTEER AS EVENT STAFF</b></ul><ul>Without the support of our community, RoboCup in WA would be impossible, and we are indebted to everyone who volunteers as RoboCup Event Staff every year. Volunteering at a RoboCup event means helping out a great cause... and it's also a lot of fun!</ul><ul>If you would like to volunteer to help out as Event Staff at this year's event, please <a href=\"https://forms.cloud.microsoft/r/Nz1M0G2qwt\"><b>click here</b></a>.</ul><ul><b>⚠️ IMPORTANT NOTICE REGARDING MENTOR SUPPORT</b></ul><ul>For any school or organisation planning to enter <b>FOUR OR MORE TEAMS</b> into this year's WA State Event, we are implementing some important changes of which you need to be aware. RoboCup Junior Australia is a volunteer-run initiative and relies upon the support of our community. The RoboCup Junior WA State Event is a significant undertaking, and in recent years this event has evolved to the point where the organising committee no longer has sufficient pairs of hands to staff all roles on event day.</ul><ul>Schools or organisations entering <b>BETWEEN 4 AND 7 TEAMS</b> are required to nominate <b>ONE ADULT</b> who will serve as Event Staff for the duration of the event.</ul><ul>Schools or organisations entering <b>8 OR MORE TEAMS</b> are required to nominate <b>TWO ADULTS</b> to act as Event Staff.</ul><ul>Schools or organisations entering <b>3 TEAMS OR FEWER</b> are not required to nominate an adult to act as Event Staff, but are welcome to volunteer.</ul><ul>Please note that due to their duties as event staff, <b>YOUR NOMINATED ADULT(S) WILL BE UNABLE TO SUPERVISE YOUR STUDENTS DURING THE EVENT</b> and you will need to make alternative arrangements to ensure duty of care by another adult. RoboCup Junior Australia does not provide duty of care at any point during our events and responsibility for duty of care remains with your school or organisation.</ul><ul>To provide the details of your nominated adults who will act as Event Staff, please use the sign-up link above. All Event Staff are required to hold a Working With Children Check (or valid exemption). If required we would be happy to assist with this. Thank you for helping make RoboCup Junior WA possible!</ul>",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/EventBannerImages/EventBannerImage_fe46370c-b947-43dc-94ce-e33230964d1b.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/254",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": 4,
+        "division_maxRegistrationsForDivision": 40,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": 4,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": 4,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": 4,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": 4,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Intermediate Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": 4,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": 4,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": 4,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Lightweight Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": 4,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": 4,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": 4,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
   }
 ]

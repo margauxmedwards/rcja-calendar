@@ -1,12 +1,2078 @@
 [
   {
-    "id": 1,
-    "name": "Melbourne State Competition",
-    "startDate": "2024-03-25T09:00:00",
-    "venue": {
-      "name": "Docklands Stadium",
-      "address": "Docklands VIC 3008"
+    "id": 241,
+    "state": 1,
+    "name": "CustomBot Workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2025-02-21",
+    "endDate": "2025-02-21",
+    "registrationsOpenDate": "2024-11-29",
+    "registrationsCloseDate": "2025-02-18",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "David Ebert",
+      "email": "david.ebert@robocupjunior.org.au"
     },
-    "registrationURL": "https://enter.robocupjunior.org.au"
+    "venue": {
+      "name": "Melbourne Connect Rooms M02/M03",
+      "address": "Superfloor, Melbourne Connect\r\n700 Swanston St, Carlton VIC 3053"
+    },
+    "bleachedEventDetails": "This workshop will be presented by experienced facilitator and teacher David Ebert and the world renowned RoboCup Junior Victoria CustomBot Crew. In this Workshops, we will be delving into the world of building robots using Arduino &amp; Raspberry Pi, and answering all the questions you have about these exciting technologies. \n\nThis workshop will commence at 9am, and conclude by 3pm.\n\nThis Workshop is primarily designed for mentor attendees (teachers, coaches and others facilitating students engaging in RoboCup Junior), however mentors are welcome to bring along 2-3 students to also participate in the workshop\n\nPlease note this workshop is not catered - feel free to bring along your own food/drink or purchase from the onsite cafe during the morning tea and lunch breaks. \n\nPlaces are also limited - if you register and are subsequently unable to make it, please unregister yourself or let us know ASAP so the place is still available.\n\nAdditionally, please complete the pre-workshop survey at the following link when you register for the workshop so we can make sure you get the most out of the session: https://forms.microsoft.com/r/mzyPLcvbc7",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_2be90b0b-dbb8-4701-9a3f-b21c261c06a4.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/241",
+    "availabledivisions": [
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Line",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Maze",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Soccer",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 236,
+    "state": 1,
+    "name": "Introduction to Robotics Workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2025-02-28",
+    "endDate": "2025-02-28",
+    "registrationsOpenDate": "2024-11-29",
+    "registrationsCloseDate": "2025-02-25",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "David Ebert",
+      "email": "david.ebert@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Melbourne Connect Rooms M13/M14",
+      "address": "Superfloor, Melbourne Connect\r\n700 Swanston St, Carlton VIC 3053"
+    },
+    "bleachedEventDetails": "This workshop will cover the basics of robotics, programming and engineering design, using LEGO® Education SPIKE™ Prime, including:\n<ul>\n<li>Learn how to use SPIKE™ Prime in your classroom</li>\n<li>Prepare to teach STEAM using the SPIKE™ Prime lesson units</li>\n<li>Develop ideas for facilitating hands-on lessons</li>\n<li>Share classroom management tips</li>\n<li>Learn the basics for participating in RoboCup Junior Events</li>\n</ul>\nThis workshop will be presented by experienced facilitator and teacher David Ebert, with support from other RoboCup Junior Committee Members. \n\nThis workshop will commence at 9am, and conclude by 3pm.\n\nThis Workshop is primarily designed for mentor attendees (teachers, coaches and others facilitating students engaging in RoboCup Junior), however mentors are welcome to bring along 2-3 students to also participate in the workshop\n\nParticipants who do not have a Spike Prime kit will be able to use a provided kit on the day, however please email us in advance that you will need a kit so we can make sure enough are available. \n\nPlease note this workshop is not catered - feel free to bring along your own food/drink or purchase from the onsite cafe during the morning tea and lunch breaks.\n\nPlaces are also limited - if you register and are subsequently unable to make it, please unregister yourself or let us know ASAP so the place is still available.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_938020a3-651a-4ba7-b358-89a8e3aa9ed8.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/236",
+    "availabledivisions": [
+      {
+        "name": "EV3",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Spike Prime",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 237,
+    "state": 1,
+    "name": "OnStage & Programming Workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2025-03-07",
+    "endDate": "2025-03-07",
+    "registrationsOpenDate": "2024-11-29",
+    "registrationsCloseDate": "2025-03-04",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "David Ebert",
+      "email": "david.ebert@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Melbourne Connect Rooms M13/M14",
+      "address": "Superfloor, Melbourne Connect\r\n700 Swanston St, Carlton VIC 3053"
+    },
+    "bleachedEventDetails": "This workshop will be presented by experienced facilitator David Ebert with support from other RoboCup Junior Committee Members. In this Workshop, you will continue to build your knowledge of how to program Lego robots, and dive into our OnStage Challenge.\n\nThis workshop will commence at 9am, and conclude by 3pm. Please bring along your laptop, and robot (if you have one).\n\nThis Workshop is primarily designed for mentor attendees (teachers, coaches and others facilitating students engaging in RoboCup Junior), however mentors are welcome to bring along 2-3 students to also participate in the workshop\n\nParticipants who do not have a Spike Prime kit will be able to use a provided kit on the day, however please email us in advance that you will need a kit so we can make sure enough are available. \n\nPlease note this workshop is not catered - feel free to bring along your own food/drink or purchase from the onsite cafe during the morning tea and lunch breaks.\n\nPlaces are also limited - if you register and are subsequently unable to make it, please unregister yourself or let us know ASAP so the place is still available.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_938020a3-651a-4ba7-b358-89a8e3aa9ed8.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/237",
+    "availabledivisions": [
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 238,
+    "state": 1,
+    "name": "Rescue Line Workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2025-03-14",
+    "endDate": "2025-03-14",
+    "registrationsOpenDate": "2024-11-29",
+    "registrationsCloseDate": "2025-03-11",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "David Ebert",
+      "email": "david.ebert@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Melbourne Connect Rooms M13/M14",
+      "address": "Superfloor, Melbourne Connect\r\n700 Swanston St, Carlton VIC 3053"
+    },
+    "bleachedEventDetails": "This workshop will be presented by experienced facilitator and teacher David Ebert, with support from other RoboCup Junior Committee Members. \n \nThis workshop will commence at 9am, and conclude by 3pm.  Please bring along your laptop, and robot (if you have one).\n\nThis Workshop is primarily designed for mentor attendees (teachers, coaches and others facilitating students engaging in RoboCup Junior), however mentors are welcome to bring along 2-3 students to also participate in the workshop\n\nParticipants who do not have a Spike Prime kit will be able to use a provided kit on the day, however please email us in advance that you will need a kit so we can make sure enough are available. \n\nPlease note this workshop is not catered - feel free to bring along your own food/drink or purchase from the onsite cafe during the morning tea and lunch breaks.\n\nPlaces are also limited - if you register and are subsequently unable to make it, please unregister yourself or let us know ASAP so the place is still available.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_938020a3-651a-4ba7-b358-89a8e3aa9ed8.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/238",
+    "availabledivisions": [
+      {
+        "name": "Rescue Line",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 239,
+    "state": 1,
+    "name": "Rescue Maze Workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2025-03-21",
+    "endDate": "2025-03-21",
+    "registrationsOpenDate": "2024-11-29",
+    "registrationsCloseDate": "2025-03-18",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "David Ebert",
+      "email": "david.ebert@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Melbourne Connect Rooms M13/M14",
+      "address": "Superfloor, Melbourne Connect\r\n700 Swanston St, Carlton VIC 3053"
+    },
+    "bleachedEventDetails": "This workshop will be presented by experienced facilitator and teacher David Ebert, with support from other RoboCup Junior Committee Members. \n\nThis workshop will commence at 9am, and conclude by 3pm.  Please bring along your laptop, and robot (if you have one).\n\nThis Workshop is primarily designed for mentor attendees (teachers, coaches and others facilitating students engaging in RoboCup Junior), however mentors are welcome to bring along 2-3 students to also participate in the workshop\n\nParticipants who do not have a Spike Prime kit will be able to use a provided kit on the day, however please email us in advance that you will need a kit so we can make sure enough are available. \n\nPlease note this workshop is not catered - feel free to bring along your own food/drink or purchase from the onsite cafe during the morning tea and lunch breaks.\n\nPlaces are also limited - if you register and are subsequently unable to make it, please unregister yourself or let us know ASAP so the place is still available.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_938020a3-651a-4ba7-b358-89a8e3aa9ed8.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/239",
+    "availabledivisions": [
+      {
+        "name": "Rescue Maze",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 240,
+    "state": 1,
+    "name": "Soccer Workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2025-03-28",
+    "endDate": "2025-03-28",
+    "registrationsOpenDate": "2024-11-29",
+    "registrationsCloseDate": "2025-03-25",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "David Ebert",
+      "email": "david.ebert@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Melbourne Connect Rooms M13/M14",
+      "address": "Superfloor, Melbourne Connect\r\n700 Swanston St, Carlton VIC 3053"
+    },
+    "bleachedEventDetails": "This workshop will be presented by experienced facilitator and teacher David Ebert, with support from other RoboCup Junior Committee Members. \n\nThis workshop will commence at 9am, and conclude by 3pm.  Please bring along your laptop, and robot (if you have one).\n\nThis Workshop is primarily designed for mentor attendees (teachers, coaches and others facilitating students engaging in RoboCup Junior), however mentors are welcome to bring along 2-3 students to also participate in the workshop\n\nParticipants who do not have a Spike Prime kit will be able to use a provided kit on the day, however please email us in advance that you will need a kit so we can make sure enough are available. \n\nPlease note this workshop is not catered - feel free to bring along your own food/drink or purchase from the onsite cafe during the morning tea and lunch breaks.\n\nPlaces are also limited - if you register and are subsequently unable to make it, please unregister yourself or let us know ASAP so the place is still available.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_938020a3-651a-4ba7-b358-89a8e3aa9ed8.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/240",
+    "availabledivisions": [
+      {
+        "name": "Soccer",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 244,
+    "state": 1,
+    "name": "Horsham Regional",
+    "eventType": "competition",
+    "cmsEventId": "25_VI_HORSH_C53",
+    "startDate": "2025-06-16",
+    "endDate": "2025-06-16",
+    "registrationsOpenDate": "2025-01-05",
+    "registrationsCloseDate": "2025-06-13",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 37,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Adam Engert",
+      "email": "adam.engert@wlc.vic.edu.au"
+    },
+    "venue": {
+      "name": "Wimmera Lutheran College - Horsham Campus",
+      "address": "25 Trinity Drive\r\nHorsham VIC 3400"
+    },
+    "bleachedEventDetails": "All students attending must be registered.\n\nMentors must be in receipt of Participation Deeds prior to registering students for the event, and submit these for all registered students on the event day.\n\nAll mentors must submit a Mentor Declaration on the event day.\n\nParticipation Deeds and Mentor Declarations can be downloaded from the compliance forms section of http://robocupjunior.org.au/challenge-regions/vic.\n\nEvent timings (TBC subject to schedules and on the day delays/changes) - Doors Open: 8:30am, Volunteer Briefing 9:00am, Opening Proceedings: 9:30am, Competition Begins 10am, Presentations: 3:30pm.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_8af0b33f-b01a-4c54-aa59-456f0306f667.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/244",
+    "availabledivisions": [
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 264,
+    "state": 1,
+    "name": "Geelong Regional",
+    "eventType": "competition",
+    "cmsEventId": "25_VI_GEELO_2E6",
+    "startDate": "2025-07-25",
+    "endDate": "2025-07-25",
+    "registrationsOpenDate": "2025-05-09",
+    "registrationsCloseDate": "2025-07-18",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 40,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 40,
+    "workshopStudentEntryFee": 40,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Antony Benson",
+      "email": "a.benson@kardinia.vic.edu.au"
+    },
+    "venue": {
+      "name": "Kardinia International College",
+      "address": "29/31 Kardinia Dr, Bell Post Hill VIC 3215"
+    },
+    "bleachedEventDetails": "All students attending must be registered.\n\nMentors must be in receipt of Participation Deeds prior to registering students for the event, and submit these for all registered students on the event day.\n\nAll mentors must submit a Mentor Declaration on the event day.\n\nParticipation Deeds and Mentor Declarations can be downloaded from the compliance forms section of http://robocupjunior.org.au/challenge-regions/vic.\n\nEvent timings (TBC subject to schedules and on the day delays/changes) - Doors Open: 8:30am, Volunteer Briefing 9:00am, Opening Proceedings: 9:15am, Competition Begins 9:30am, Presentations: 2:00pm.\n\nOther divisons available by request.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_6cf7f9f1-548c-4230-afb0-489f713ccd79.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/264",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Intermediate Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 243,
+    "state": 1,
+    "name": "Melbourne Regional",
+    "eventType": "competition",
+    "cmsEventId": "25_VI_MELBO_D6A",
+    "startDate": "2025-07-26",
+    "endDate": "2025-07-26",
+    "registrationsOpenDate": "2025-01-05",
+    "registrationsCloseDate": "2025-07-18",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 40,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Evan Bailey",
+      "email": "evan.bailey@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Genazzano FCJ College",
+      "address": "301 Cotham Rd, Kew VIC 3101"
+    },
+    "bleachedEventDetails": "All students attending must be registered.\n\nMentors must be in receipt of Participation Deeds prior to registering students for the event, and submit these for all registered students on the event day.\n\nAll mentors must submit a Mentor Declaration on the event day.\n\nParticipation Deeds and Mentor Declarations can be downloaded from the compliance forms section of http://robocupjunior.org.au/challenge-regions/vic.\n\nEvent timings (TBC subject to schedules and on the day delays/changes) - Doors Open: 8:30am, Volunteer Briefing 9:00am, Opening Proceedings: 9:30am, Competition Begins 10am, Presentations: 3:30pm.\n\nOther divisons available by request.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_1e7af2be-f61b-4253-86a9-3828313ddd23.png",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/243",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Intermediate Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 275,
+    "state": 1,
+    "name": "Melbourne Maker Day",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2025-08-09",
+    "endDate": "2025-08-09",
+    "registrationsOpenDate": "2025-05-05",
+    "registrationsCloseDate": "2025-08-07",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 30,
+    "paymentDueDate": "2025-08-09",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 30,
+    "workshopStudentEntryFee": 30,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Evan Bailey",
+      "email": "evan.bailey@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Genazzano FCJ College",
+      "address": "301 Cotham Rd, Kew VIC 3101"
+    },
+    "bleachedEventDetails": "This Workshop is intended for students and teams who are preparing to enter an upcoming RoboCup Junior event. Bring your work in progress robots along and we'll help you get them in shape for the States and/or Nationals. We will kick off at 10am and wrap up at 3pm. Lunch will be provided, however mentors must be present to supervise thier students. If you or your students have any allergies or dietry requirements, we kindly ask that you provide your own lunch.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_1e7af2be-f61b-4253-86a9-3828313ddd23.png",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/275",
+    "availabledivisions": [
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Line",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Maze",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Soccer",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 245,
+    "state": 1,
+    "name": "Outer Eastern Regional",
+    "eventType": "competition",
+    "cmsEventId": "25_VI_OUTER_7D0",
+    "startDate": "2025-08-15",
+    "endDate": "2025-08-15",
+    "registrationsOpenDate": "2025-01-05",
+    "registrationsCloseDate": "2025-08-08",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 40,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Traceye Rapinett",
+      "email": "Traceye.Rapinett@education.vic.gov.au"
+    },
+    "venue": {
+      "name": "Ramlegh Park Primary School",
+      "address": "34 Thoroughbred Dr\r\nClyde North VIC 3978"
+    },
+    "bleachedEventDetails": "All students attending must be registered.\n\nMentors must be in receipt of Participation Deeds prior to registering students for the event, and submit these for all registered students on the event day.\n\nAll mentors must submit a Mentor Declaration on the event day.\n\nParticipation Deeds and Mentor Declarations can be downloaded from the compliance forms section of http://robocupjunior.org.au/challenge-regions/vic.\n\nEvent timings (TBC subject to schedules and on the day delays/changes) - Doors Open: 8:30am, Volunteer Briefing 9:00am, Opening Proceedings: 9:30am, Competition Begins 10am, Presentations: 3:30pm.\n\nOther divisons available by request.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_c1cc33cc-4742-4f40-a630-1964bc182700.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/245",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 242,
+    "state": 1,
+    "name": "Victorian State Event Presented by RMIT University",
+    "eventType": "competition",
+    "cmsEventId": "25_VI_VICTO_EC2",
+    "startDate": "2025-09-13",
+    "endDate": "2025-09-13",
+    "registrationsOpenDate": "2025-01-05",
+    "registrationsCloseDate": "2025-09-05",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 70,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Evan Bailey",
+      "email": "evan.bailey@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Genazzano FCJ College",
+      "address": "301 Cotham Rd, Kew VIC 3101"
+    },
+    "bleachedEventDetails": "All students attending must be registered.\n\nMentors must be in receipt of Participation Deeds prior to registering students for the event, and submit these for all registered students on the event day.\n\nAll mentors must submit a Mentor Declaration on the event day.\n\nParticipation Deeds and Mentor Declarations can be downloaded from the compliance forms section of http://robocupjunior.org.au/challenge-regions/vic.\n\nEvent timings (TBC subject to schedules and on the day delays/changes) - Doors Open: 8:30am, Volunteer Briefing 9:00am, Opening Proceedings: 9:30am, Competition Begins 10am, Presentations: 3:30pm..\n\nOther divisons available by request.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_1e7af2be-f61b-4253-86a9-3828313ddd23.png",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/242",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Intermediate Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Lightweight Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 301,
+    "state": 1,
+    "name": "Introductory & Spike Prime Workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-02-13",
+    "endDate": "2026-02-13",
+    "registrationsOpenDate": "2025-12-17",
+    "registrationsCloseDate": "2026-02-11",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "David Ebert",
+      "email": "david.ebert@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Melbourne Connect Rooms M01/M02",
+      "address": ""
+    },
+    "bleachedEventDetails": "This workshop will be presented by experienced facilitator and teacher David Ebert, with support from other RoboCup Junior Committee Members. \n\nThis workshop will commence at 9am and conclude by 3pm.  Please bring along your laptop and robot (if you have one).\n\nThis workshop is primarily designed for mentor attendees (teachers, coaches and others facilitating students engaging in RoboCup Junior), however mentors are welcome to register 2-3 students to also participate in the workshop. All students must be accompanied by a mentor.\n\nParticipants who do not have a Spike Prime kit will be able to use a provided kit on the day, however please email us in advance that you will need a kit so we can make sure enough are available. \n\nPlease note this workshop is not catered - feel free to bring along your own food/drink or purchase from the onsite cafe during the morning tea and lunch breaks.\n\nPlaces are also limited - if you register and are subsequently unable to make it, please unregister yourself or let us know ASAP so the place is still available.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_4aa8d964-53db-4e72-9917-9a165a3bbf50.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/301",
+    "availabledivisions": [
+      {
+        "name": "EV3",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Spike Prime",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "SPIKE Prime Challenge (Open)",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 302,
+    "state": 1,
+    "name": "Custom Bot Workshop & Creator Space Tour",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-03-13",
+    "endDate": "2026-03-13",
+    "registrationsOpenDate": "2025-12-17",
+    "registrationsCloseDate": "2026-03-11",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "David Ebert",
+      "email": "david.ebert@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Melbourne Connect Rooms M01/M02",
+      "address": ""
+    },
+    "bleachedEventDetails": "This is not a Challenge specific workshop, but the topics will include Developing Robots Using the Raspberry Pi Pico Microcontroller and  Using a Raspberry Pi Single Board Computer (e.g. for vision sensing). These topics are widely applicable across all divisions.\n \nThis workshop will be presented by experienced facilitator and teacher David Ebert, with support from other RoboCup Junior Committee Members. This workshop will commence at 9am and conclude by 3pm, including a tour of the The Creator Space at The University of Melbourne. Please bring along your laptop and robot (if you have one). This workshop is primarily designed for mentor attendees (teachers, coaches and others facilitating students engaging in RoboCup Junior), however mentors are welcome to register 2-3 students to also participate in the workshop. Students must be accompanied by a mentor. Participants who do not have a custom robot, please email us in advance so that we can provide a Ro/Box custom robot kit (https://robox.com.au/). These will be available for $35 payable on the day. Please note this workshop is not catered - feel free to bring along your own food/drink or purchase from the onsite cafe during the morning tea and lunch breaks. Places are also limited - if you register and are subsequently unable to make it, please unregister yourself or let us know ASAP so the place can be made available to others.\nPlease note: this will be a hands-on workshop, but for safety reasons will not include any soldering.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_4aa8d964-53db-4e72-9917-9a165a3bbf50.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/302",
+    "availabledivisions": [
+      {
+        "name": "Custom Robots",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 298,
+    "state": 1,
+    "name": "Outer Eastern Workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-03-17",
+    "endDate": "2026-03-17",
+    "registrationsOpenDate": "2025-12-30",
+    "registrationsCloseDate": "2026-03-13",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "David Ebert",
+      "email": "david.ebert@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Ramlegh Park Primary School",
+      "address": "34 Thoroughbred Dr\r\nClyde North VIC 3978"
+    },
+    "bleachedEventDetails": "This workshop will be presented by experienced facilitator and teacher David Ebert, with support from other RoboCup Junior Committee Members. \n\nThis workshop will commence at 9am, and conclude by 3pm.  Please bring along your laptop, and robot (if you have one).\n\nThis Workshop is primarily designed for mentor attendees (teachers, coaches and others facilitating students engaging in RoboCup Junior), however mentors are welcome to bring along 2-3 students to also participate in the workshop\n\nParticipants who do not have a Spike Prime kit will be able to use a provided kit on the day, however please email us in advance that you will need a kit so we can make sure enough are available. \n\nPlease note this workshop is not catered - feel free to bring along your own food/drink.\n\nPlaces are also limited - if you register and are subsequently unable to make it, please unregister yourself or let us know ASAP so the place is still available.\n\nOther divisions may be available on request.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_c1cc33cc-4742-4f40-a630-1964bc182700.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/298",
+    "availabledivisions": [
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Maze",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 303,
+    "state": 1,
+    "name": "Soccer Workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-03-20",
+    "endDate": "2026-03-20",
+    "registrationsOpenDate": "2025-12-17",
+    "registrationsCloseDate": "2026-03-18",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "David Ebert",
+      "email": "david.ebert@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Melbourne Connect Rooms M01/M02",
+      "address": ""
+    },
+    "bleachedEventDetails": "This workshop will be presented by experienced facilitator and teacher David Ebert, with support from other RoboCup Junior Committee Members. \n\nThis workshop will commence at 9am, and conclude by 3pm.  Please bring along your laptop and robot (if you have one).\n\nThis Workshop is primarily designed for mentor attendees (teachers, coaches and others facilitating students engaging in RoboCup Junior), however mentors are welcome to bring along 2-3 students to also participate in the workshop. Students must be accompanied by a mentor.\n\nParticipants who do not have a Spike Prime kit will be able to use a provided kit on the day, however, please email us in advance that you will need a kit so we can make sure enough are available. \n\nPlease note this workshop is not catered - feel free to bring along your own food/drink or purchase from the onsite cafe during the morning tea and lunch breaks.\n\nPlaces are also limited - if you register and are subsequently unable to make it, please unregister yourself or let us know ASAP so the place is still available.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_4aa8d964-53db-4e72-9917-9a165a3bbf50.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/303",
+    "availabledivisions": [
+      {
+        "name": "Lightweight Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 297,
+    "state": 1,
+    "name": "Geelong Workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-03-26",
+    "endDate": "2026-03-26",
+    "registrationsOpenDate": "2026-01-28",
+    "registrationsCloseDate": "2026-03-24",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "David Ebert",
+      "email": "david.ebert@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Kardinia International College",
+      "address": "29/31 Kardinia Dr, Bell Post Hill VIC 3215"
+    },
+    "bleachedEventDetails": "This workshop will be presented by experienced facilitator and teacher David Ebert, with support from other RoboCup Junior Committee Members. \n\nThis workshop will commence at 9am, and conclude by 3pm.  Please bring along your laptop, and robot (if you have one).\n\nThis Workshop is primarily designed for mentor attendees (teachers, coaches and others facilitating students engaging in RoboCup Junior), however mentors are welcome to bring along 2-3 students to also participate in the workshop\n\nParticipants who do not have a Spike Prime kit will be able to use a provided kit on the day, however please email us in advance that you will need a kit so we can make sure enough are available. \n\nPlease note this workshop is not catered - feel free to bring along your own food/drink.\n\nPlaces are also limited - if you register and are subsequently unable to make it, please unregister yourself or let us know ASAP so the place is still available.\n\nOther divisions may be available on request.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_6cf7f9f1-548c-4230-afb0-489f713ccd79.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/297",
+    "availabledivisions": [
+      {
+        "name": "Rescue Maze",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Soccer",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 304,
+    "state": 1,
+    "name": "Rescue Maze Workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-03-27",
+    "endDate": "2026-03-27",
+    "registrationsOpenDate": "2025-12-17",
+    "registrationsCloseDate": "2026-03-25",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "David Ebert",
+      "email": "david.ebert@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Melbourne Connect Rooms M01/M02",
+      "address": ""
+    },
+    "bleachedEventDetails": "This workshop will be presented by experienced facilitator and teacher David Ebert, with support from other RoboCup Junior Committee Members. \n\nThis workshop will commence at 9am, and conclude by 3pm.  Please bring along your laptop and robot (if you have one).\n\nThis Workshop is primarily designed for mentor attendees (teachers, coaches and others facilitating students engaging in RoboCup Junior), however mentors are welcome to bring along 2-3 students to also participate in the workshop. Students must be accompanied by a mentor.\n\nParticipants who do not have a Spike Prime kit will be able to use a provided kit on the day, however please email us in advance that you will need a kit so we can make sure enough are available. \n\nPlease note this workshop is not catered - feel free to bring along your own food/drink or purchase from the onsite cafe during the morning tea and lunch breaks.\n\nPlaces are also limited - if you register and are subsequently unable to make it, please unregister yourself or let us know ASAP so the place is still available.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_4aa8d964-53db-4e72-9917-9a165a3bbf50.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/304",
+    "availabledivisions": [
+      {
+        "name": "Intermediate Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 305,
+    "state": 1,
+    "name": "Rescue Line Workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-05-01",
+    "endDate": "2026-05-01",
+    "registrationsOpenDate": "2025-12-17",
+    "registrationsCloseDate": "2026-04-29",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "David Ebert",
+      "email": "david.ebert@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Melbourne Connect Rooms M01/M02",
+      "address": ""
+    },
+    "bleachedEventDetails": "This workshop will be presented by experienced facilitator and teacher David Ebert, with support from other RoboCup Junior Committee Members. \n\nThis workshop will commence at 9am and conclude by 3pm.  Please bring along your laptop and robot (if you have one).\n\nThis Workshop is primarily designed for mentor attendees (teachers, coaches and others facilitating students engaging in RoboCup Junior), however mentors are welcome to bring along 2-3 students to also participate in the workshop. Students must be accompanied by a mentor.\n\nParticipants who do not have a Spike Prime kit will be able to use a provided kit on the day, however please email us in advance that you will need a kit so we can make sure enough are available. \n\nPlease note this workshop is not catered - feel free to bring along your own food/drink or purchase from the onsite cafe during the morning tea and lunch breaks.\n\nPlaces are also limited - if you register and are subsequently unable to make it, please unregister yourself or let us know ASAP so the place is still available.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_4aa8d964-53db-4e72-9917-9a165a3bbf50.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/305",
+    "availabledivisions": [
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 292,
+    "state": 1,
+    "name": "Melbourne Regional",
+    "eventType": "competition",
+    "cmsEventId": null,
+    "startDate": "2026-07-25",
+    "endDate": "2026-07-25",
+    "registrationsOpenDate": "2026-02-02",
+    "registrationsCloseDate": "2026-07-17",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 45,
+    "paymentDueDate": "2026-07-25",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 45,
+    "workshopStudentEntryFee": 45,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Angeline Yannopoulos",
+      "email": "angie.yannopoulos@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Genazzano FCJ College",
+      "address": "301 Cotham Rd, Kew VIC 3101"
+    },
+    "bleachedEventDetails": "All students attending must be registered.\n\nMentors must be in receipt of Participation Deeds prior to registering students for the event, and submit these for all registered students on the event day.\n\nAll mentors must submit a Mentor Declaration on the event day.\n\nParticipation Deeds and Mentor Declarations can be downloaded from the compliance forms section of http://robocupjunior.org.au/challenge-regions/vic.\n\nEvent timings (TBC subject to schedules and on the day delays/changes) - Doors Open: 8:30am, Volunteer Briefing 9:00am, Opening Proceedings: 9:30am, Competition Begins 10am, Presentations: 3:30pm.\n\nOther divisions available by request.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_1e7af2be-f61b-4253-86a9-3828313ddd23.png",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/292",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Intermediate Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Lightweight Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 293,
+    "state": 1,
+    "name": "Geelong Regional",
+    "eventType": "competition",
+    "cmsEventId": null,
+    "startDate": "2026-07-27",
+    "endDate": "2026-07-27",
+    "registrationsOpenDate": "2026-02-02",
+    "registrationsCloseDate": "2026-07-17",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 45,
+    "paymentDueDate": "2026-07-27",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 45,
+    "workshopStudentEntryFee": 45,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Antony Benson",
+      "email": "a.benson@kardinia.vic.edu.au"
+    },
+    "venue": {
+      "name": "Kardinia International College",
+      "address": "29/31 Kardinia Dr, Bell Post Hill VIC 3215"
+    },
+    "bleachedEventDetails": "All students attending must be registered.\n\nMentors must be in receipt of Participation Deeds prior to registering students for the event, and submit these for all registered students on the event day.\n\nAll mentors must submit a Mentor Declaration on the event day.\n\nParticipation Deeds and Mentor Declarations can be downloaded from the compliance forms section of http://robocupjunior.org.au/challenge-regions/vic.\n\nEvent timings (TBC subject to schedules and on the day delays/changes) - Doors Open: 8:30am, Volunteer Briefing 9:00am, Opening Proceedings: 9:15am, Competition Begins 9:30am, Presentations: 2:00pm.\n\nOther divisons available by request.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_6cf7f9f1-548c-4230-afb0-489f713ccd79.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/293",
+    "availabledivisions": [
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Intermediate Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Lightweight Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 295,
+    "state": 1,
+    "name": "Melbourne Maker Day",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-08-08",
+    "endDate": "2026-08-08",
+    "registrationsOpenDate": "2026-02-02",
+    "registrationsCloseDate": "2026-08-05",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 40,
+    "paymentDueDate": "2026-08-08",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 40,
+    "workshopStudentEntryFee": 40,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Angeline Yannopoulos",
+      "email": "angie.yannopoulos@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Genazzano FCJ College",
+      "address": "301 Cotham Rd, Kew VIC 3101"
+    },
+    "bleachedEventDetails": "This Workshop is intended for students and teams who are preparing to enter an upcoming RoboCup Junior event. Bring your work in progress robots along and we'll help you get them in shape for the States and/or Nationals. We will kick off at 10am and wrap up at 3pm. Lunch will be provided, however mentors must be present to supervise their students. If you or your students have any allergies or dietary requirements, we kindly ask that you provide your own lunch.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_1e7af2be-f61b-4253-86a9-3828313ddd23.png",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/295",
+    "availabledivisions": [
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Line",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Maze",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Soccer",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 294,
+    "state": 1,
+    "name": "Horsham Regional",
+    "eventType": "competition",
+    "cmsEventId": null,
+    "startDate": "2026-08-10",
+    "endDate": "2026-08-10",
+    "registrationsOpenDate": "2026-02-02",
+    "registrationsCloseDate": "2026-08-07",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 40,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 40,
+    "workshopStudentEntryFee": 40,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Adam Engert",
+      "email": "adam.engert@wlc.vic.edu.au"
+    },
+    "venue": {
+      "name": "Wimmera Lutheran College - Horsham Campus",
+      "address": "25 Trinity Drive\r\nHorsham VIC 3400"
+    },
+    "bleachedEventDetails": "All students attending must be registered.\n\nMentors must be in receipt of Participation Deeds prior to registering students for the event, and submit these for all registered students on the event day.\n\nAll mentors must submit a Mentor Declaration on the event day.\n\nParticipation Deeds and Mentor Declarations can be downloaded from the compliance forms section of http://robocupjunior.org.au/challenge-regions/vic.\n\nEvent timings (TBC subject to schedules and on the day delays/changes) - Doors Open: 8:30am, Volunteer Briefing 9:00am, Opening Proceedings: 9:30am, Competition Begins 10am, Presentations: 3:30pm.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_8af0b33f-b01a-4c54-aa59-456f0306f667.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/294",
+    "availabledivisions": [
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 296,
+    "state": 1,
+    "name": "Outer Eastern Regional",
+    "eventType": "competition",
+    "cmsEventId": null,
+    "startDate": "2026-08-14",
+    "endDate": "2026-08-14",
+    "registrationsOpenDate": "2026-02-02",
+    "registrationsCloseDate": "2026-08-07",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 45,
+    "paymentDueDate": "2026-08-14",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 45,
+    "workshopStudentEntryFee": 45,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Traceye Rapinett",
+      "email": "Traceye.Rapinett@education.vic.gov.au"
+    },
+    "venue": {
+      "name": "Ramlegh Park Primary School",
+      "address": "34 Thoroughbred Dr\r\nClyde North VIC 3978"
+    },
+    "bleachedEventDetails": "All students attending must be registered.\n\nMentors must be in receipt of Participation Deeds prior to registering students for the event, and submit these for all registered students on the event day.\n\nAll mentors must submit a Mentor Declaration on the event day.\n\nParticipation Deeds and Mentor Declarations can be downloaded from the compliance forms section of http://robocupjunior.org.au/challenge-regions/vic.\n\nEvent timings (TBC subject to schedules and on the day delays/changes) - Doors Open: 8:30am, Volunteer Briefing 9:00am, Opening Proceedings: 9:30am, Competition Begins 10am, Presentations: 3:30pm.\n\nOther divisions available by request.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_c1cc33cc-4742-4f40-a630-1964bc182700.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/296",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Intermediate Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 291,
+    "state": 1,
+    "name": "Victorian State Event",
+    "eventType": "competition",
+    "cmsEventId": null,
+    "startDate": "2026-09-05",
+    "endDate": "2026-09-05",
+    "registrationsOpenDate": "2026-02-02",
+    "registrationsCloseDate": "2026-08-28",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 75,
+    "paymentDueDate": "2026-09-05",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 75,
+    "workshopStudentEntryFee": 75,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Evan Bailey",
+      "email": "evan.bailey@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Genazzano FCJ College",
+      "address": "301 Cotham Rd, Kew VIC 3101"
+    },
+    "bleachedEventDetails": "All students attending must be registered.\n\nMentors must be in receipt of Participation Deeds prior to registering students for the event, and submit these for all registered students on the event day.\n\nAll mentors must submit a Mentor Declaration on the event day.\n\nParticipation Deeds and Mentor Declarations can be downloaded from the compliance forms section of http://robocupjunior.org.au/challenge-regions/vic.\n\nEvent timings (TBC subject to schedules and on the day delays/changes) - Doors Open: 8:30am, Volunteer Briefing 9:00am, Opening Proceedings: 9:30am, Competition Begins 10am, Presentations: 3:30pm..\n\nOther divisions available by request.\n\nIn the event of high demand, registrations may fill before the close date. We encourage you to register your teams early to secure their place at the event!",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_1e7af2be-f61b-4253-86a9-3828313ddd23.png",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/291",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Intermediate Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Lightweight Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 299,
+    "state": 1,
+    "name": "Traralgon Worskshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": null,
+    "endDate": null,
+    "registrationsOpenDate": null,
+    "registrationsCloseDate": null,
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "David Ebert",
+      "email": "david.ebert@robocupjunior.org.au"
+    },
+    "venue": null,
+    "bleachedEventDetails": "This workshop will be presented by experienced facilitator and teacher David Ebert, with support from other RoboCup Junior Committee Members. \n\nThis workshop will commence at 9am, and conclude by 3pm.  Please bring along your laptop, and robot (if you have one).\n\nThis Workshop is primarily designed for mentor attendees (teachers, coaches and others facilitating students engaging in RoboCup Junior), however mentors are welcome to bring along 2-3 students to also participate in the workshop\n\nParticipants who do not have a Spike Prime kit will be able to use a provided kit on the day, however please email us in advance that you will need a kit so we can make sure enough are available. \n\nPlease note this workshop is not catered - feel free to bring along your own food/drink.\n\nPlaces are also limited - if you register and are subsequently unable to make it, please unregister yourself or let us know ASAP so the place is still available.\n\nOther divisions may be available on request.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_8e1d3495-ee09-44d2-89eb-724d927b7563.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/299",
+    "availabledivisions": [
+      {
+        "name": "Rescue Line",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 300,
+    "state": 1,
+    "name": "Horsham Workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": null,
+    "endDate": null,
+    "registrationsOpenDate": null,
+    "registrationsCloseDate": null,
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "David Ebert",
+      "email": "david.ebert@robocupjunior.org.au"
+    },
+    "venue": null,
+    "bleachedEventDetails": "This workshop will be presented by experienced facilitator and teacher David Ebert, with support from other RoboCup Junior Committee Members. \n\nThis workshop will commence at 9am, and conclude by 3pm.  Please bring along your laptop, and robot (if you have one).\n\nThis Workshop is primarily designed for mentor attendees (teachers, coaches and others facilitating students engaging in RoboCup Junior), however mentors are welcome to bring along 2-3 students to also participate in the workshop\n\nParticipants who do not have a Spike Prime kit will be able to use a provided kit on the day, however please email us in advance that you will need a kit so we can make sure enough are available. \n\nPlease note this workshop is not catered - feel free to bring along your own food/drink.\n\nPlaces are also limited - if you register and are subsequently unable to make it, please unregister yourself or let us know ASAP so the place is still available.\n\nOther divisions may be available on request.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_8e1d3495-ee09-44d2-89eb-724d927b7563.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/300",
+    "availabledivisions": [
+      {
+        "name": "Rescue Line",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Soccer",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
   }
 ]

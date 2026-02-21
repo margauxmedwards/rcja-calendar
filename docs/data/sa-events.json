@@ -1,12 +1,198 @@
 [
   {
-    "id": 1,
-    "name": "Adelaide State Competition",
-    "startDate": "2024-03-30T09:00:00",
-    "venue": {
-      "name": "Adelaide Convention Centre",
-      "address": "Adelaide SA 5000"
+    "id": 278,
+    "state": 6,
+    "name": "State Competition",
+    "eventType": "competition",
+    "cmsEventId": "25_SA_STATE_8FE",
+    "startDate": "2025-08-25",
+    "endDate": "2025-08-25",
+    "registrationsOpenDate": "2025-05-11",
+    "registrationsCloseDate": "2025-08-21",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 50,
+    "paymentDueDate": "2025-08-25",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 50,
+    "workshopStudentEntryFee": 50,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Simon Coad",
+      "email": "simon.coad@robocupjunior.org.au"
     },
-    "registrationURL": "https://enter.robocupjunior.org.au"
+    "venue": {
+      "name": "St Peters College Sports Centre",
+      "address": "Main Sports Centre \r\nEnter through the main gates off Hackney Road"
+    },
+    "bleachedEventDetails": "Registration 8:15 - 9:15am\nEvent Start time 9am\nEvent expected to be completed with presentations by 2:30pm",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_2775aa27-696d-4039-a6d4-a2df50bd3b10.JPG",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/278",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "OnStage (Max 2 Robots)",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Featherweight Sumo",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Heavy Sumo",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Sumo",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 290,
+    "state": 6,
+    "name": "Sumomania25",
+    "eventType": "competition",
+    "cmsEventId": null,
+    "startDate": "2025-11-25",
+    "endDate": "2025-11-25",
+    "registrationsOpenDate": "2025-10-27",
+    "registrationsCloseDate": "2025-11-19",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 20,
+    "paymentDueDate": "2025-12-02",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 20,
+    "workshopStudentEntryFee": 20,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Simon Coad",
+      "email": "simon.coad@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Flinders University",
+      "address": "Bedford Park Gym (Alan Mitchell Sport Centre)\r\nFlinders University\r\nBedford Park"
+    },
+    "bleachedEventDetails": "Scrutineering from 9:45 to 10:15am - please arrive with completed scrutineering sheet /\nCompetition runs from 10:30am to 1:30pm - teams will be separated into round robin groups to determine finalists /\nStudents are asked to bring their own food and drinks /\nThere will be parking for busses available",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/EventBannerImages/EventBannerImage_6f3808fa-722f-4b97-93ce-db97637028f0.JPG",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/290",
+    "availabledivisions": [
+      {
+        "name": "Featherweight Sumo",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Heavy Sumo",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Sumo",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
   }
 ]
