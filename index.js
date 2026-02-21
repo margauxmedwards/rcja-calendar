@@ -1,5 +1,5 @@
 const Sentry = require("@sentry/node");
-// const { nodeProfilingIntegration } = require("@sentry/profiling-node"); // Temporarily disabled for Node v24 compatibility
+const { nodeProfilingIntegration } = require("@sentry/profiling-node");
 const express = require("express");
 const morgan = require("morgan");
 const ical = require("ical-generator");
@@ -22,7 +22,7 @@ if (process.env.SENTRY_DSN) {
     integrations: [
       new Sentry.Integrations.Http({ tracing: true }),
       new Sentry.Integrations.Express({ app }),
-      // nodeProfilingIntegration(), // Temporarily disabled for Node v24 compatibility
+      nodeProfilingIntegration(),
     ],
     tracesSampleRate: 1.0,
     profilesSampleRate: 1.0,
