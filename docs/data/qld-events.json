@@ -1158,8 +1158,8 @@
       "email": "qld@robocupjunior.org.au"
     },
     "venue": {
-      "name": "UQ Centre",
-      "address": "Building 27A, Union Rd, St Lucia QLD 4067\r\nhttps://g.co/kgs/pvavzCz"
+      "name": "University of Queensland",
+      "address": "Building 11A, ModWest\r\nhttps://maps.uq.edu.au/?campusId=406&zLevel=0&zoom=18&identifier=1003307028\r\nhttps://share.google/UsbVyFYhKbDyRAULx"
     },
     "bleachedEventDetails": "Link to info pack:\nhttps://www.robocupjunior.org.au/wp-content/uploads/2025/07/QLD-State-Championships-2025-Info-Pack.pdf\n\nNote: Sumo division will be not be running at the State Competition. We invite teams to attend the Redlands Sumo Competition at Ormiston College.",
     "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/EventBannerImages/EventBannerImage_33983c03-5e92-4c04-b195-bf9a0c49abf5.png",
@@ -1558,5 +1558,42 @@
         "division_entryFee": null
       }
     ]
+  },
+  {
+    "id": 316,
+    "state": 7,
+    "name": "State Championships",
+    "eventType": "competition",
+    "cmsEventId": null,
+    "startDate": "2026-08-14",
+    "endDate": "2026-08-15",
+    "registrationsOpenDate": "2026-02-22",
+    "registrationsCloseDate": "2026-08-07",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 135,
+    "paymentDueDate": "2026-08-07",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 135,
+    "workshopStudentEntryFee": 135,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "RoboCupJunior Queensland",
+      "email": "qld@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "University of Queensland",
+      "address": "Building 11A, ModWest\r\nhttps://maps.uq.edu.au/?campusId=406&zLevel=0&zoom=18&identifier=1003307028\r\nhttps://share.google/UsbVyFYhKbDyRAULx"
+    },
+    "bleachedEventDetails": "More event details coming soon! We look forward to you joining our 25th Anniversary Event!\n\n**This is a new venue in 2026**",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_f0456b83-5c38-459c-aec7-19ba720df31f.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/316",
+    "availabledivisions": []
   }
 ]
