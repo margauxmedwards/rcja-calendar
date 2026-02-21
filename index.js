@@ -244,6 +244,95 @@ app.get("/api/regions", async (req, res) => {
 });
 
 
+// QLD sub-region definitions with keyword matching for event name + venue
+const qldSubRegions = {
+  "seq":      { title: "South East QLD",       keywords: ["brisbane", "redland", "gold coast", "sunshine coast", "ipswich", "logan", "moreton", "springfield", "ormiston"] },
+  "wide-bay": { title: "Wide Bay & Central", keywords: ["bundaberg", "gladstone", "rockhampton", "mackay", "hervey bay", "maryborough"] },
+  "downs":    { title: "Darling Downs",          keywords: ["darling downs", "toowoomba", "warwick", "stanthorpe"] },
+  "fnq":      { title: "Far North QLD",          keywords: ["cairns", "fnq", "townsville", "far north"] },
+};
+
+function categorizeQldEvent(event) {
+  const searchText = (
+    event.name + " " + (event.venue ? event.venue.name + " " + event.venue.address : "")
+  ).toLowerCase();
+
+  for (const [key, region] of Object.entries(qldSubRegions)) {
+    if (region.keywords.some(kw => searchText.includes(kw))) {
+      return key;
+    }
+  }
+  // State / National events default to SEQ
+  if (searchText.includes("state") || searchText.includes("national")) {
+    return "seq";
+  }
+  return null;
+}
+
+function buildQldRegions() {
+  if (!cachedEvents || !cachedEvents["QLD"]) return null;
+
+  const now = new Date();
+  const result = {
+    "seq":      { title: qldSubRegions["seq"].title,      events: [] },
+    "wide-bay": { title: qldSubRegions["wide-bay"].title, events: [] },
+    "downs":    { title: qldSubRegions["downs"].title,    events: [] },
+    "fnq":      { title: qldSubRegions["fnq"].title,      events: [] },
+  };
+
+  // Include QLD events and NAT (national) events
+  const qldEvents = [...cachedEvents["QLD"], ...(cachedEvents["NAT"] || [])];
+
+  qldEvents.forEach(event => {
+    const startDate = new Date(event.startDate);
+    if (startDate < now) return;
+
+    const regionKey = categorizeQldEvent(event);
+    if (!regionKey) return;
+
+    const isHighlight = event.name.toLowerCase().includes("state") || event.name.toLowerCase().includes("national");
+
+    result[regionKey].events.push({
+      date: startDate.toLocaleDateString("en-AU", { day: "numeric", month: "short" }),
+      name: event.name,
+      desc: event.venue ? event.venue.name + ", " + event.venue.address : "TBC",
+      highlight: isHighlight,
+      registrationURL: event.registrationURL || "",
+      startDate: event.startDate,
+      endDate: event.endDate,
+    });
+  });
+
+  // Sort events within each region by date
+  for (const region of Object.values(result)) {
+    region.events.sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
+  }
+
+  return result;
+}
+
+app.get("/api/qld/regions", (req, res) => {
+  if (!cachedEvents) {
+    res.status(503).send({ error: "Events cache is not yet populated, please try again shortly." });
+    return;
+  }
+  try {
+    const data = buildQldRegions();
+    if (!data) {
+      res.status(503).send({ error: "QLD events are not yet available, please try again shortly." });
+      return;
+    }
+    res.send(data);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send({ error: error.message });
+  }
+});
+
+app.get("/qld", (req, res) => {
+  res.sendFile(path.join(__dirname, "public/qld.html"));
+});
+
 app.get("/sync", (req, res) => {
   res.sendFile(path.join(__dirname, "public/sync.html"));
 });
