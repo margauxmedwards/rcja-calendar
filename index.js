@@ -6,6 +6,7 @@ const ical = require("ical-generator");
 const axios = require("axios");
 const dotenv = require("dotenv");
 const path = require("path");
+const { stateConfigs } = require("./stateConfig");
 dotenv.config();
 
 let cachedStates = null;
@@ -243,6 +244,143 @@ app.get("/api/regions", async (req, res) => {
   }
 });
 
+
+// Generic function to categorize events into sub-regions based on state config
+function categorizeEvent(event, stateConfig) {
+  const searchText = (
+    event.name + " " + (event.venue ? event.venue.name + " " + event.venue.address : "")
+  ).toLowerCase();
+
+  for (const [key, region] of Object.entries(stateConfig.subRegions)) {
+    if (region.keywords.some(kw => searchText.includes(kw))) {
+      return key;
+    }
+  }
+  // State / National events default to configured default region
+  if (searchText.includes("state") || searchText.includes("national")) {
+    return stateConfig.defaultRegion;
+  }
+  return null;
+}
+
+// Generic function to build regions for any state
+function buildStateRegions(stateCode) {
+  const config = stateConfigs[stateCode];
+  if (!config || !config.enabled) return null;
+  if (!cachedEvents || !cachedEvents[stateCode]) return null;
+
+  const now = new Date();
+  const result = {};
+
+  // Initialize result object with all regions
+  for (const [key, region] of Object.entries(config.subRegions)) {
+    result[key] = { title: region.title, events: [] };
+  }
+
+  // Include state events and NAT (national) events
+  const stateEvents = [...cachedEvents[stateCode], ...(cachedEvents["NAT"] || [])];
+
+  stateEvents.forEach(event => {
+    const startDate = new Date(event.startDate);
+    if (startDate < now) return;
+
+    const regionKey = categorizeEvent(event, config);
+    if (!regionKey || !result[regionKey]) return;
+
+    const isHighlight = event.name.toLowerCase().includes("state") || event.name.toLowerCase().includes("national");
+
+    result[regionKey].events.push({
+      date: startDate.toLocaleDateString("en-AU", { day: "numeric", month: "short" }),
+      name: event.name,
+      desc: event.venue ? event.venue.name + ", " + event.venue.address : "TBC",
+      highlight: isHighlight,
+      registrationURL: event.registrationURL || "",
+      startDate: event.startDate,
+      endDate: event.endDate,
+    });
+  });
+
+  // Sort events within each region by date
+  for (const region of Object.values(result)) {
+    region.events.sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
+  }
+
+  return result;
+}
+
+// Deprecated: kept for backwards compatibility
+const qldSubRegions = stateConfigs["QLD"] ? stateConfigs["QLD"].subRegions : {};
+function categorizeQldEvent(event) {
+  return categorizeEvent(event, stateConfigs["QLD"]);
+}
+function buildQldRegions() {
+  return buildStateRegions("QLD");
+}
+
+// Generic API endpoint for any state's regions
+app.get("/api/:stateCode/regions", (req, res) => {
+  const stateCode = req.params.stateCode.toUpperCase();
+  
+  if (!cachedEvents) {
+    res.status(503).send({ error: "Events cache is not yet populated, please try again shortly." });
+    return;
+  }
+
+  const config = stateConfigs[stateCode];
+  if (!config || !config.enabled) {
+    res.status(404).send({ error: `Regional page not available for state: ${stateCode}` });
+    return;
+  }
+
+  try {
+    const data = buildStateRegions(stateCode);
+    if (!data) {
+      res.status(503).send({ error: `${stateCode} events are not yet available, please try again shortly.` });
+      return;
+    }
+    res.send(data);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send({ error: error.message });
+  }
+});
+
+// Get state configuration (metadata, region order, etc.)
+app.get("/api/:stateCode/config", (req, res) => {
+  const stateCode = req.params.stateCode.toUpperCase();
+  const config = stateConfigs[stateCode];
+  
+  if (!config || !config.enabled) {
+    res.status(404).send({ error: `Regional page not available for state: ${stateCode}` });
+    return;
+  }
+
+  // Send config without keywords (don't expose internal logic to frontend)
+  const publicConfig = {
+    title: config.title,
+    year: new Date().getFullYear().toString(),
+    regionOrder: config.regionOrder,
+    regionTitles: Object.fromEntries(
+      Object.entries(config.subRegions).map(([key, region]) => [key, region.title])
+    )
+  };
+
+  res.send(publicConfig);
+});
+
+// Generic page route for any state
+app.get("/:stateCode", (req, res, next) => {
+  const stateCode = req.params.stateCode.toUpperCase();
+  const config = stateConfigs[stateCode];
+  
+  // Check if it's a state code or another route
+  if (config && config.enabled) {
+    return res.sendFile(path.join(__dirname, "public/state.html"));
+  }
+  
+  // Not a state route, continue to next handler
+  next();
+});
 
 app.get("/sync", (req, res) => {
   res.sendFile(path.join(__dirname, "public/sync.html"));
