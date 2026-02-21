@@ -479,19 +479,23 @@
                     region.events.sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
                 }
                 
+                // Debug logging
+                console.log('Total events loaded:', events.length);
+                console.log('Events by region:', Object.entries(regionsData).map(([key, data]) => `${key}: ${data.events.length}`).join(', '));
+                
                 document.getElementById("last-updated").innerHTML =
                     '⏱️ Last updated: ' + new Date().toLocaleTimeString("en-AU") +
                     '<span style="margin-left: 15px;">·</span>' +
                     '<a href="../sync/" style="margin-left: 15px; color: #999; text-decoration: none;">Sync to Calendar</a>';
                 
-                // Show placeholder with instructions
-                const year = new Date().getFullYear();
-                document.getElementById("display-area").innerHTML = `
-                    <div class="placeholder-text">
-                        <div class="robot-icon">🤖</div>
-                        <p>Select a region to explore the ${year} Roadmap.</p>
-                        <small>Click a region on the left to view upcoming events</small>
-                    </div>`;
+                // Auto-select first region
+                const firstRegionKey = stateConfig.regionOrder[0];
+                if (firstRegionKey) {
+                    const firstRegionBtn = document.querySelector(`button[onclick*="'${firstRegionKey}'"]`);
+                    if (firstRegionBtn) {
+                        setTimeout(() => showRegion(firstRegionBtn, firstRegionKey), 100);
+                    }
+                }
             },
             error: function (err) {
                 document.getElementById("display-area").innerHTML = `
