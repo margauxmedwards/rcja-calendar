@@ -291,7 +291,8 @@
 <script>
     // Get state code from URL path
     const pathParts = window.location.pathname.split('/').filter(p => p && !p.includes('.'));
-    const stateCode = (pathParts[pathParts.length - 1] || 'QLD').toLowerCase();
+    const stateCode = (pathParts[pathParts.length - 1] || 'QLD').toUpperCase();
+    const stateCodeLower = stateCode.toLowerCase();
     
     let stateConfig = null;
     let regionsData = null;
@@ -421,7 +422,7 @@
             </div>`;
 
         $.ajax({
-            url: `https://enter.robocupjunior.org.au/api/v1/public/states/${stateCode}/allEventsDetailed/`,
+            url: `https://enter.robocupjunior.org.au/api/v1/public/states/${stateCodeLower}/allEventsDetailed/`,
             type: "GET",
             dataType: "json",
             success: function (events) {
