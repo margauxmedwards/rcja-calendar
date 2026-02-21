@@ -291,7 +291,7 @@
 <script>
     // Get state code from URL path
     const pathParts = window.location.pathname.split('/').filter(p => p && !p.includes('.'));
-    const stateCode = (pathParts[pathParts.length - 1] || 'QLD').toUpperCase();
+    const stateCode = (pathParts[pathParts.length - 1] || 'QLD').toLowerCase();
     
     let stateConfig = null;
     let regionsData = null;
