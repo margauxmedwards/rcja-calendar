@@ -254,6 +254,85 @@
                 padding: 25px 20px;
             }
         }
+
+        /* Modal Styles */
+        .event-modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.6);
+            overflow: auto;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 700px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            position: relative;
+        }
+
+        .modal-close {
+            color: #aaa;
+            float: right;
+            font-size: 32px;
+            font-weight: bold;
+            line-height: 20px;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .modal-close:hover,
+        .modal-close:focus {
+            color: #192f59;
+        }
+
+        .modal-title {
+            color: #192f59;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            clear: both;
+        }
+
+        .modal-body {
+            line-height: 1.8;
+        }
+
+        .modal-detail {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .modal-detail:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .modal-detail strong {
+            color: #192f59;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .event-item {
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .event-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
     </style>
 </head>
 <body>
@@ -285,6 +364,15 @@
             <span>⏱️ –</span>
             <span style="margin-left: 15px;">·</span>
             <a href="../sync/" style="margin-left: 15px; color: #999; text-decoration: none;">Sync to Calendar</a>
+        </div>
+    </div>
+
+    <!-- Event Details Modal -->
+    <div id="eventModal" class="event-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 id="modalTitle" class="modal-title"></h2>
+            <div id="modalBody" class="modal-body"></div>
         </div>
     </div>
 
@@ -331,15 +419,15 @@
         if (events.length === 0) {
             eventsHtml = '<div class="no-events">No upcoming events for this region</div>';
         } else {
-            eventsHtml = events.map(evt => {
+            eventsHtml = events.map((evt, index) => {
                 const stateClass = evt.highlight ? ' state-highlight' : '';
                 const stateIcon = evt.highlight ? '🏆 ' : '';
                 const registerLink = evt.registrationURL
-                    ? `<a href="${escapeHtml(evt.registrationURL)}" target="_blank" rel="noopener" class="event-link">Register →</a>`
+                    ? `<a href="${escapeHtml(evt.registrationURL)}" target="_blank" rel="noopener" class="event-link" onclick="event.stopPropagation()">Register →</a>`
                     : "";
                 
                 return `
-                    <div class="event-item${stateClass}">
+                    <div class="event-item${stateClass}" onclick="showEventModal(${index}, '${regionKey}')">
                         <span class="date-tag">${escapeHtml(evt.date)}</span>
                         <span class="event-title">${stateIcon}${escapeHtml(evt.name)}</span>
                         <div class="event-desc">${escapeHtml(evt.desc)}</div>
@@ -462,7 +550,8 @@
                                 desc: event.venue ? `${event.venue.name}, ${event.venue.address}` : "TBC",
                                 registrationURL: event.registrationURL,
                                 highlight: isHighlight,
-                                startDate: event.startDate
+                                startDate: event.startDate,
+                                fullData: event
                             });
                             categorized = true;
                             break;
@@ -478,7 +567,8 @@
                             desc: event.venue ? `${event.venue.name}, ${event.venue.address}` : "TBC",
                             registrationURL: event.registrationURL,
                             highlight: isHighlight,
-                            startDate: event.startDate
+                            startDate: event.startDate,
+                            fullData: event
                         });
                     }
                 });
@@ -517,10 +607,96 @@
         });
     }
 
+    function showEventModal(eventIndex, regionKey) {
+        const event = regionsData[regionKey].events[eventIndex];
+        if (!event || !event.fullData) return;
+        
+        const data = event.fullData;
+        const modal = document.getElementById('eventModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalBody = document.getElementById('modalBody');
+        
+        modalTitle.textContent = data.name || 'Event Details';
+        
+        // Format dates
+        const formatDate = (dateStr) => dateStr ? new Date(dateStr).toLocaleDateString("en-AU", { 
+            year: 'numeric', month: 'long', day: 'numeric' 
+        }) : 'TBC';
+        
+        // Format divisions
+        const divisions = data.availabledivisions && data.availabledivisions.length > 0
+            ? data.availabledivisions.map(d => d.name).join(', ')
+            : 'Not specified';
+        
+        // Format enquiries
+        const enquiries = data.directEnquiriesTo
+            ? `${data.directEnquiriesTo.fullName} (<a href="mailto:${data.directEnquiriesTo.email}">${data.directEnquiriesTo.email}</a>)`
+            : 'See registration link';
+        
+        // Format venue
+        const venue = data.venue
+            ? `${data.venue.name}<br>${data.venue.address}`
+            : 'TBC';
+        
+        modalBody.innerHTML = `
+            <div class="modal-detail">
+                <strong>Event Date:</strong>
+                ${formatDate(data.startDate)}${data.endDate && data.endDate !== data.startDate ? ' to ' + formatDate(data.endDate) : ''}
+            </div>
+            <div class="modal-detail">
+                <strong>Registrations Open:</strong>
+                ${formatDate(data.registrationsOpenDate)} to ${formatDate(data.registrationsCloseDate)}
+            </div>
+            <div class="modal-detail">
+                <strong>Venue:</strong>
+                <div>${venue}</div>
+            </div>
+            <div class="modal-detail">
+                <strong>Event Type:</strong>
+                ${data.eventType || 'Competition'}
+            </div>
+            <div class="modal-detail">
+                <strong>Available Divisions:</strong>
+                ${divisions}
+            </div>
+            <div class="modal-detail">
+                <strong>Direct Enquiries To:</strong>
+                <div>${enquiries}</div>
+            </div>
+            ${data.registrationURL ? `
+            <div class="modal-detail">
+                <strong>Registration Link:</strong>
+                <div><a href="${escapeHtml(data.registrationURL)}" target="_blank" style="color: #192f59; word-break: break-all;">${escapeHtml(data.registrationURL)}</a></div>
+            </div>` : ''}
+            ${data.bleachedEventDetails ? `
+            <div class="modal-detail">
+                <strong>Description:</strong>
+                <div style="white-space: pre-wrap;">${escapeHtml(data.bleachedEventDetails)}</div>
+            </div>` : ''}
+        `;
+        
+        modal.style.display = 'block';
+    }
+    
+    function closeModal() {
+        document.getElementById('eventModal').style.display = 'none';
+    }
+    
+    // Close modal when clicking X or outside modal
+    window.onclick = function(event) {
+        const modal = document.getElementById('eventModal');
+        if (event.target == modal) {
+            closeModal();
+        }
+    };
+
     document.addEventListener("DOMContentLoaded", function () {
         loadConfig();
         // Auto-refresh every 5 minutes
         setInterval(loadData, 5 * 60 * 1000);
+        
+        // Set up modal close button
+        document.querySelector('.modal-close').onclick = closeModal;
     });
 </script>
 </body>
