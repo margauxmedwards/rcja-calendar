@@ -422,7 +422,7 @@
             </div>`;
 
         $.ajax({
-            url: `https://enter.robocupjunior.org.au/api/v1/public/states/${stateCodeLower}/allEventsDetailed/`,
+            url: `../data/${stateCodeLower}-events.json`,
             type: "GET",
             dataType: "json",
             success: function (events) {

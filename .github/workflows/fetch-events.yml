@@ -1,0 +1,41 @@
+name: Fetch and Cache Events
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Run every 6 hours
+  workflow_dispatch:  # Allow manual trigger
+  push:
+    branches:
+      - main
+
+jobs:
+  fetch-events:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Create data directory
+        run: mkdir -p docs/data
+
+      - name: Fetch and cache events
+        run: |
+          node .github/scripts/fetch-events.js
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          
+          if git diff --quiet docs/data/; then
+            echo "No changes to commit"
+          else
+            git add docs/data/
+            git commit -m "chore: Update cached events data"
+            git push origin main
+          fi
