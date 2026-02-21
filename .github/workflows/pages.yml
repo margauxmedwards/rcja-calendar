@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: '0 0 * * *'  # Rebuild daily so the deployed site always reflects the latest events from the live API
   workflow_dispatch:
 
 permissions:
