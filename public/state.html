@@ -305,7 +305,7 @@
             .replace(/"/g, "&quot;");
     }
 
-    function showRegion(regionKey) {
+    function showRegion(btn, regionKey) {
         if (!regionsData || !regionsData[regionKey]) {
             document.getElementById("display-area").innerHTML = `
                 <div class="placeholder-text">
@@ -320,10 +320,10 @@
         const events = region.events || [];
 
         // Update active button
-        document.querySelectorAll('.region-btn').forEach(btn => {
-            btn.classList.remove('active');
+        document.querySelectorAll('.region-btn').forEach(el => {
+            el.classList.remove('active');
         });
-        event.currentTarget.classList.add('active');
+        btn.classList.add('active');
 
         let eventsHtml;
         if (events.length === 0) {
@@ -374,7 +374,7 @@
                 // Create region buttons
                 const buttonsHtml = config.regionOrder.map(regionKey => {
                     const title = config.regionTitles[regionKey];
-                    return `<button class="region-btn" onclick="showRegion('${regionKey}')">${escapeHtml(title)}</button>`;
+                    return `<button class="region-btn" onclick="showRegion(this, '${regionKey}')">${escapeHtml(title)}</button>`;
                 }).join("");
                 document.getElementById("region-buttons").innerHTML = buttonsHtml;
                 
