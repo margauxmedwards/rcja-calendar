@@ -1,1 +1,258 @@
-[]
+[
+  {
+    "id": 279,
+    "state": 3,
+    "name": "Darwin EV3 Workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2025-05-22",
+    "endDate": "2025-05-22",
+    "registrationsOpenDate": "2025-05-14",
+    "registrationsCloseDate": "2025-05-21",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Jacqueline Leah",
+      "email": "jacqueline.leah@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Level 4, Room 22, Charles Darwin University Danala",
+      "address": "54 Cavenagh Street\r\nDarwin City"
+    },
+    "bleachedEventDetails": "This workshop will be presented by experienced facilitator and qualified teacher Jason Flood, and will run from 9am – 4pm.\n\nIf you don’t have your own robots to bring, we will have robots for participants to use at the workshop and they can be constructed on the day. Spike Prime robots can be purchased through MTA.\n\nPlease provide your own recess and lunch or feel free to have lunch in the city.\n\nWe have organised an informal dinner at The Trailer Boat Club from 7pm on Friday 23rd May, so you can chat with Jason in a more relaxed environment.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_36760276-d84b-4a74-8416-7985cec44372.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/279",
+    "availabledivisions": [
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Line",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Maze",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Soccer",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 280,
+    "state": 3,
+    "name": "Darwin Spike Prime Workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2025-05-23",
+    "endDate": "2025-05-23",
+    "registrationsOpenDate": "2025-05-14",
+    "registrationsCloseDate": "2025-05-22",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Jacqueline Leah",
+      "email": "jacqueline.leah@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Level 4, Room 22, Charles Darwin University Danala",
+      "address": "54 Cavenagh Street\r\nDarwin City"
+    },
+    "bleachedEventDetails": "This workshop will be presented by experienced facilitator and qualified teacher Jason Flood, and will run from 9am – 4pm.\n\nIf you don’t have your own robots to bring, we will have robots for participants to use at the workshop and they can be constructed on the day. Spike Prime robots can be purchased through MTA.\n\nPlease provide your own recess and lunch or feel free to have lunch in the city.\n\nWe have organised an informal dinner at The Trailer Boat Club from 7pm on Friday 23rd May, so you can chat with Jason in a more relaxed environment.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_36760276-d84b-4a74-8416-7985cec44372.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/280",
+    "availabledivisions": [
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Line",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Maze",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Soccer",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 286,
+    "state": 3,
+    "name": "Alice Springs Regional Event '25",
+    "eventType": "competition",
+    "cmsEventId": null,
+    "startDate": "2025-08-15",
+    "endDate": "2025-08-15",
+    "registrationsOpenDate": "2025-07-25",
+    "registrationsCloseDate": "2025-08-15",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Deb Simpson",
+      "email": "deb.simpson@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Brailting Primary School - Hall",
+      "address": "80 Head St, Braitling"
+    },
+    "bleachedEventDetails": "",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/EventBannerImages/EventBannerImage_0e0f957f-bb05-4cfa-b523-0b5005d167fb.jpeg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/286",
+    "availabledivisions": [
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 289,
+    "state": 3,
+    "name": "Darwin Robocup Junior Competition",
+    "eventType": "competition",
+    "cmsEventId": "25_NT_JACQU_A50",
+    "startDate": "2025-12-02",
+    "endDate": "2025-12-02",
+    "registrationsOpenDate": "2025-10-21",
+    "registrationsCloseDate": "2025-11-24",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 10,
+    "paymentDueDate": "2025-11-24",
+    "competition_billingType": "student",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 10,
+    "workshopStudentEntryFee": 10,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Jacqueline Leah",
+      "email": "jacqueline.leah@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Girraween Primary School",
+      "address": "25 Carruth Avenue Girraween NT 0836"
+    },
+    "bleachedEventDetails": "",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/EventBannerImages/EventBannerImage_6be84cad-19ca-4dba-84d9-bd9ff707b678.JPG",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/289",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "student",
+        "division_entryFee": 10
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "student",
+        "division_entryFee": 10
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "student",
+        "division_entryFee": 10
+      }
+    ]
+  }
+]

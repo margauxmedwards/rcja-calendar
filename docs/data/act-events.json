@@ -1,1 +1,354 @@
-[]
+[
+  {
+    "id": 253,
+    "state": 4,
+    "name": "ACT Teacher Workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2025-03-12",
+    "endDate": "2025-03-12",
+    "registrationsOpenDate": "2025-02-14",
+    "registrationsCloseDate": "2025-03-11",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Graham Stock",
+      "email": "Graham.Stock@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Academy of Future Skills - Mungga-iri Jingee - Southside Hub",
+      "address": "Caroline Chisholm Senior School campus\r\n108 Hambidge Crescent\r\nChisholm ACT 2905"
+    },
+    "bleachedEventDetails": "Time: 4-5:30pm\n\nThis workshop will provide ACT teachers with an opportunity to develop their skills for the 2025 RoboCup season. Bring a computer and robot to learn the basics of each challenge, and how this fits into your curriculum.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/EventBannerImages/EventBannerImage_2ef7bcd4-9d8c-4358-8781-f231921fed34.png",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/253",
+    "availabledivisions": [
+      {
+        "name": "Arduino in the Classroom",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "EV3",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Raspberry Pi & Vision Sensing",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Spike Prime",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 258,
+    "state": 4,
+    "name": "ACT Term 2 Teams Workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2025-06-21",
+    "endDate": "2025-06-21",
+    "registrationsOpenDate": "2025-02-19",
+    "registrationsCloseDate": "2025-06-20",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Graham Stock",
+      "email": "Graham.Stock@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Academy of Future Skills - Mungga-iri Jingee - Southside Hub",
+      "address": "Caroline Chisholm Senior School campus\r\n108 Hambidge Crescent\r\nChisholm ACT 2905"
+    },
+    "bleachedEventDetails": "We are welcoming teachers and students to our Term 2 Workshop. For teams, get valuable time with our team of RoboCup experts to help you get your robots ready for this years competition. For teachers, continue your learning journey to understand more about the competition and everything you need to support your teams.\n\nWorkshop will run from 10am-3pm",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/EventBannerImages/EventBannerImage_8d2ee356-7d3f-455d-b6cb-1df950744930.png",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/258",
+    "availabledivisions": [
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Line",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Maze",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Soccer",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 259,
+    "state": 4,
+    "name": "Term 3 Workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2025-09-12",
+    "endDate": "2025-09-12",
+    "registrationsOpenDate": "2025-02-19",
+    "registrationsCloseDate": "2025-09-10",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Graham Stock",
+      "email": "Graham.Stock@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Academy of Future Skills - Mungga-iri Jingee - Southside Hub",
+      "address": "Caroline Chisholm Senior School campus\r\n108 Hambidge Crescent\r\nChisholm ACT 2905"
+    },
+    "bleachedEventDetails": "Join us the night before our state competition to get those last minute tests and improvements in so your robots are ready to take on the ACT's best! \n\nWorkshop time will run 5pm-7pm.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/EventBannerImages/EventBannerImage_94fe954d-e834-4868-85a0-ebaa5d3c7a94.png",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/259",
+    "availabledivisions": [
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Line",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Maze",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Soccer",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 260,
+    "state": 4,
+    "name": "State Competition",
+    "eventType": "competition",
+    "cmsEventId": "25_AC_STATE_980",
+    "startDate": "2025-09-13",
+    "endDate": "2025-09-13",
+    "registrationsOpenDate": "2025-02-19",
+    "registrationsCloseDate": "2025-09-10",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 80,
+    "paymentDueDate": "2025-09-12",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 80,
+    "workshopStudentEntryFee": 80,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Graham Stock",
+      "email": "Graham.Stock@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Academy of Future Skills - Mungga-iri Jingee - Southside Hub",
+      "address": "Caroline Chisholm Senior School campus\r\n108 Hambidge Crescent\r\nChisholm ACT 2905"
+    },
+    "bleachedEventDetails": "Join us for the 2025 ACT State Competition where you will put your robots up against the best teams from the ACT.\n\nWhether you are a seasoned robocup participant or it's your first year, we would love to welcome you to our 2025 state event where you can experience RoboCup competition for yourself and get to see first-hand how exciting it can be!\n\nTimes: 9am-4pm\n\nMedia consent form: https://www.robocupjunior.org.au/wp-content/uploads/2021/03/RCJA_Media_Release_Deed.pdf",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/EventBannerImages/EventBannerImage_7ebba910-2907-46ba-827d-93871d1fdc42.png",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/260",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Intermediate Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Lightweight Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  }
+]
