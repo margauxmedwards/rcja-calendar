@@ -436,20 +436,23 @@
                 // Categorize each event
                 events.forEach(event => {
                     const eventName = (event.name || "").toLowerCase();
-                    const eventDesc = (event.description || "").toLowerCase();
-                    const eventText = eventName + " " + eventDesc;
+                    const venue = event.venue ? `${event.venue.name || ''} ${event.venue.address || ''}`.toLowerCase() : '';
+                    const eventText = eventName + " " + venue;
+                    const isHighlight = eventName.includes("state") || eventName.includes("national");
                     
                     let categorized = false;
                     
                     // Check keywords for each region
                     for (const [key, region] of Object.entries(stateConfig.subRegions)) {
                         if (region.keywords && region.keywords.some(keyword => eventText.includes(keyword.toLowerCase()))) {
+                            const startDate = event.startDate ? new Date(event.startDate) : new Date();
                             regionsData[key].events.push({
                                 name: event.name,
-                                date: event.date ? new Date(event.date).toLocaleDateString("en-AU", { month: 'short', day: 'numeric' }) : "TBD",
-                                desc: event.description || "",
-                                registrationURL: event.registration_url,
-                                highlight: false
+                                date: startDate.toLocaleDateString("en-AU", { month: 'short', day: 'numeric' }),
+                                desc: event.venue ? `${event.venue.name}, ${event.venue.address}` : "TBC",
+                                registrationURL: event.registrationURL,
+                                highlight: isHighlight,
+                                startDate: event.startDate
                             });
                             categorized = true;
                             break;
@@ -458,15 +461,22 @@
                     
                     // If not categorized, add to default region
                     if (!categorized && stateConfig.defaultRegion) {
+                        const startDate = event.startDate ? new Date(event.startDate) : new Date();
                         regionsData[stateConfig.defaultRegion].events.push({
                             name: event.name,
-                            date: event.date ? new Date(event.date).toLocaleDateString("en-AU", { month: 'short', day: 'numeric' }) : "TBD",
-                            desc: event.description || "",
-                            registrationURL: event.registration_url,
-                            highlight: false
+                            date: startDate.toLocaleDateString("en-AU", { month: 'short', day: 'numeric' }),
+                            desc: event.venue ? `${event.venue.name}, ${event.venue.address}` : "TBC",
+                            registrationURL: event.registrationURL,
+                            highlight: isHighlight,
+                            startDate: event.startDate
                         });
                     }
                 });
+                
+                // Sort events within each region by date
+                for (const region of Object.values(regionsData)) {
+                    region.events.sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
+                }
                 
                 document.getElementById("last-updated").innerHTML =
                     '⏱️ Last updated: ' + new Date().toLocaleTimeString("en-AU") +
