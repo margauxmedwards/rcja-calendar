@@ -370,11 +370,16 @@ app.get("/api/:stateCode/config", (req, res) => {
 
 // Generic page route for any state
 app.get("/:stateCode", (req, res, next) => {
-  const stateCode = req.params.stateCode.toUpperCase();
+  const rawCode = req.params.stateCode;
+  const stateCode = rawCode.toUpperCase();
   const config = stateConfigs[stateCode];
   
   // Check if it's a state code or another route
   if (config && config.enabled) {
+    // Redirect to uppercase URL if the request used lowercase letters
+    if (rawCode !== stateCode) {
+      return res.redirect(301, `/${stateCode}`);
+    }
     return res.sendFile(path.join(__dirname, "public/state.html"));
   }
   

@@ -102,6 +102,49 @@ const stateConfigs = {
     defaultRegion: "perth",
     regionOrder: ["perth", "regional"]
   },
+
+  "ACT": {
+    enabled: true,
+    title: "RCJACT – Australian Capital Territory Regional Calendar",
+    subRegions: {
+      "canberra": { 
+        title: "Canberra & ACT", 
+        keywords: ["canberra", "act", "belconnen", "tuggeranong", "woden", "gungahlin"] 
+      },
+    },
+    defaultRegion: "canberra",
+    regionOrder: ["canberra"]
+  },
+
+  "NT": {
+    enabled: true,
+    title: "RCJNT – Northern Territory Regional Calendar",
+    subRegions: {
+      "darwin": { 
+        title: "Darwin & NT", 
+        keywords: ["darwin", "palmerston", "alice springs", "katherine", "northern territory"] 
+      },
+    },
+    defaultRegion: "darwin",
+    regionOrder: ["darwin"]
+  },
+
+  "TAS": {
+    enabled: true,
+    title: "RCJTAS – Tasmania Regional Calendar",
+    subRegions: {
+      "hobart": { 
+        title: "Hobart & South", 
+        keywords: ["hobart", "kingston", "huonville", "sorell"] 
+      },
+      "regional": { 
+        title: "Regional Tasmania", 
+        keywords: ["launceston", "devonport", "burnie", "north", "northwest"] 
+      },
+    },
+    defaultRegion: "hobart",
+    regionOrder: ["hobart", "regional"]
+  },
 };
 
 module.exports = { stateConfigs };
