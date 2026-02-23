@@ -1,6 +1,6 @@
 #!/bin/bash
 
-STATES=("qld" "nsw" "vic" "sa" "wa" "tas" "act" "nt" "nz")
+STATES=("qld" "nsw" "vic" "sa" "wa" "tas" "act" "nt" "nz" "nat")
 DATA_DIR="docs/data"
 
 echo "Fetching event data from RCJA API..."
