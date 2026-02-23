@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: '0 * * * *'  # Run every hour
   workflow_dispatch:  # Allow manual trigger
+    inputs:
+      force_update:
+        description: 'Force deploy even if no data changes detected'
+        required: false
+        default: false
+        type: boolean
   push:
     branches:
       - main
@@ -59,16 +65,16 @@ jobs:
           git push origin main
 
       - name: Setup Pages
-        if: steps.check-changes.outputs.changed == 'true' || github.event_name == 'push'
+        if: steps.check-changes.outputs.changed == 'true' || github.event_name == 'push' || inputs.force_update
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
-        if: steps.check-changes.outputs.changed == 'true' || github.event_name == 'push'
+        if: steps.check-changes.outputs.changed == 'true' || github.event_name == 'push' || inputs.force_update
         uses: actions/upload-pages-artifact@v3
         with:
           path: './docs'
 
       - name: Deploy to GitHub Pages
-        if: steps.check-changes.outputs.changed == 'true' || github.event_name == 'push'
+        if: steps.check-changes.outputs.changed == 'true' || github.event_name == 'push' || inputs.force_update
         id: deployment
         uses: actions/deploy-pages@v4
