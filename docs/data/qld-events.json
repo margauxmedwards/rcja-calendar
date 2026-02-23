@@ -1476,7 +1476,24 @@
     "bleachedEventDetails": "Gladstone Regionals Competition for Rescue Line and OnStage and Sumo. More information coming coming.\nRegistration opens 2nd March, closes 23rd March",
     "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
     "registrationURL": "https://enter.robocupjunior.org.au/events/321",
-    "availabledivisions": []
+    "availabledivisions": [
+      {
+        "name": "Sumo - Primary",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Secondary",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
   },
   {
     "id": 318,
@@ -1514,6 +1531,92 @@
     "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
     "registrationURL": "https://enter.robocupjunior.org.au/events/318",
     "availabledivisions": []
+  },
+  {
+    "id": 312,
+    "state": 7,
+    "name": "Bundaberg Regional RoboCup Competition",
+    "eventType": "competition",
+    "cmsEventId": "26_QL_BUNDA_41E",
+    "startDate": "2026-05-20",
+    "endDate": "2026-05-20",
+    "registrationsOpenDate": "2026-02-18",
+    "registrationsCloseDate": "2026-05-14",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 10,
+    "paymentDueDate": "2026-05-20",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 10,
+    "workshopStudentEntryFee": 10,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Matthew Hollett",
+      "email": "mholl172@eq.edu.au"
+    },
+    "venue": {
+      "name": "Kepnock State High School",
+      "address": "43 Kepnock Rd, Bundaberg Central QLD 4670"
+    },
+    "bleachedEventDetails": "• Location: RJ Young Hall, Kepnock State High School (43 Kepnock Rd, Bundaberg, QLD 4670)\n• Time: 9am - 2pm\n• Registration is open to school and community-based teams.\n• Staff and students are asked to bring their own lunch. We will update mentors if coffee/food vans become available.\n• Each registered school/club must provide an official on the day. Non-teaching volunteers welcome e.g. parents, past RoboCup siblings etc. with all necessary training being provided on the day. Additional volunteers welcome.\n• Individual schools/clubs are responsible for the supervision of their own teams. Please ensure an appropriate ratio between students/adults is adhered to.\nCompetition Handbook will be emailed out to mentors with more information including event specific rule changes.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/312",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
   },
   {
     "id": 319,
@@ -2019,26 +2122,26 @@
     "availabledivisions": []
   },
   {
-    "id": 324,
+    "id": 332,
     "state": 7,
-    "name": "Bundaberg Sumo Competition",
+    "name": "Bundaberg Regional Sumo Championship",
     "eventType": "competition",
-    "cmsEventId": null,
+    "cmsEventId": "26_QL_BUNDA_5D2",
     "startDate": "2026-11-04",
     "endDate": "2026-11-04",
-    "registrationsOpenDate": "2026-10-05",
-    "registrationsCloseDate": "2026-10-26",
-    "maxMembersPerTeam": 4,
+    "registrationsOpenDate": "2026-10-06",
+    "registrationsCloseDate": "2026-10-28",
+    "maxMembersPerTeam": 2,
     "event_maxRegistrationsPerSchool": null,
-    "event_maxRegistrationsForEvent": 40,
+    "event_maxRegistrationsForEvent": 100,
     "entryFeeIncludesGST": true,
-    "competition_defaultEntryFee": 50,
-    "paymentDueDate": null,
+    "competition_defaultEntryFee": 10,
+    "paymentDueDate": "2026-11-04",
     "competition_billingType": "team",
     "competition_specialRateNumber": null,
     "competition_specialRateFee": null,
-    "workshopTeacherEntryFee": 50,
-    "workshopStudentEntryFee": 50,
+    "workshopTeacherEntryFee": 10,
+    "workshopStudentEntryFee": 10,
     "eventSurchargeAmount": 0,
     "surchargeName": "Surcharge",
     "surchargeEventDescription": "",
@@ -2046,22 +2149,17 @@
       "fullName": "Matthew Hollett",
       "email": "mholl172@eq.edu.au"
     },
-    "venue": null,
-    "bleachedEventDetails": "",
+    "venue": {
+      "name": "Kepnock State High School",
+      "address": "43 Kepnock Rd, Bundaberg Central QLD 4670"
+    },
+    "bleachedEventDetails": "• Location: RJ Young Hall, Kepnock State High School (43 Kepnock Rd, Bundaberg, QLD 4670)\n• Time: 9am - 2pm\n• Registration is open to school and community-based teams.\n• Staff and students are asked to bring their own lunch. We will update mentors if coffee/food vans become available.\n• Each registered school/club must provide an official on the day. Non-teaching volunteers welcome e.g. parents, past RoboCup siblings etc. with all necessary training being provided on the day. Additional volunteers welcome.\n• Individual schools/clubs are responsible for the supervision of their own teams. Please ensure an appropriate ratio between students/adults is adhered to.\nCompetition Handbook will be emailed out to mentors with more information including event specific rule changes.",
     "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
-    "registrationURL": "https://enter.robocupjunior.org.au/events/324",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/332",
     "availabledivisions": [
       {
         "name": "Sumo - Intermediate",
         "description": "Sumo (Intermediate)",
-        "division_maxRegistrationsPerSchool": null,
-        "division_maxRegistrationsForDivision": null,
-        "division_billingType": "event",
-        "division_entryFee": null
-      },
-      {
-        "name": "Sumo - Open",
-        "description": "",
         "division_maxRegistrationsPerSchool": null,
         "division_maxRegistrationsForDivision": null,
         "division_billingType": "event",
