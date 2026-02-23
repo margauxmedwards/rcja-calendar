@@ -585,58 +585,37 @@
                 <p>Loading events…</p>
             </div>`;
 
-        $.ajax({
-            url: `../data/${stateCodeLower}-events.json`,
-            type: "GET",
-            dataType: "json",
-            success: function (events) {
-                // Filter to only show future/ongoing events
-                const today = new Date();
-                today.setHours(0, 0, 0, 0);
-                const futureEvents = events.filter(event => {
-                    const eventDate = event.endDate ? new Date(event.endDate) : new Date(event.startDate);
-                    return eventDate >= today;
-                });
+        function processEvents(events) {
+            // Filter to only show future/ongoing events
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            const futureEvents = events.filter(event => {
+                const eventDate = event.endDate ? new Date(event.endDate) : new Date(event.startDate);
+                return eventDate >= today;
+            });
+            
+            // Categorize events into regions based on keywords
+            regionsData = {};
+            
+            // Initialize all regions
+            for (const [key, region] of Object.entries(stateConfig.subRegions)) {
+                regionsData[key] = { events: [] };
+            }
+            
+            // Categorize each event
+            futureEvents.forEach(event => {
+                const eventName = (event.name || "").toLowerCase();
+                const venue = event.venue ? `${event.venue.name || ''} ${event.venue.address || ''}`.toLowerCase() : '';
+                const eventText = eventName + " " + venue;
+                const isHighlight = eventName.includes("state") || eventName.includes("national");
                 
-                // Categorize events into regions based on keywords
-                regionsData = {};
+                let categorized = false;
                 
-                // Initialize all regions
+                // Check keywords for each region
                 for (const [key, region] of Object.entries(stateConfig.subRegions)) {
-                    regionsData[key] = { events: [] };
-                }
-                
-                // Categorize each event
-                futureEvents.forEach(event => {
-                    const eventName = (event.name || "").toLowerCase();
-                    const venue = event.venue ? `${event.venue.name || ''} ${event.venue.address || ''}`.toLowerCase() : '';
-                    const eventText = eventName + " " + venue;
-                    const isHighlight = eventName.includes("state") || eventName.includes("national");
-                    
-                    let categorized = false;
-                    
-                    // Check keywords for each region
-                    for (const [key, region] of Object.entries(stateConfig.subRegions)) {
-                        if (region.keywords && region.keywords.some(keyword => eventText.includes(keyword.toLowerCase()))) {
-                            const startDate = event.startDate ? new Date(event.startDate) : new Date();
-                            regionsData[key].events.push({
-                                name: event.name,
-                                date: startDate.toLocaleDateString("en-AU", { month: 'short', day: 'numeric' }),
-                                desc: event.venue ? `${event.venue.name}, ${event.venue.address}` : "TBC",
-                                registrationURL: event.registrationURL,
-                                highlight: isHighlight,
-                                startDate: event.startDate,
-                                fullData: event // Store full event data for modal
-                            });
-                            categorized = true;
-                            break;
-                        }
-                    }
-                    
-                    // If not categorized, add to default region
-                    if (!categorized && stateConfig.defaultRegion) {
+                    if (region.keywords && region.keywords.some(keyword => eventText.includes(keyword.toLowerCase()))) {
                         const startDate = event.startDate ? new Date(event.startDate) : new Date();
-                        regionsData[stateConfig.defaultRegion].events.push({
+                        regionsData[key].events.push({
                             name: event.name,
                             date: startDate.toLocaleDateString("en-AU", { month: 'short', day: 'numeric' }),
                             desc: event.venue ? `${event.venue.name}, ${event.venue.address}` : "TBC",
@@ -645,30 +624,67 @@
                             startDate: event.startDate,
                             fullData: event // Store full event data for modal
                         });
+                        categorized = true;
+                        break;
                     }
-                });
-                
-                // Sort events within each region by date
-                for (const region of Object.values(regionsData)) {
-                    region.events.sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
                 }
                 
-                // Debug logging
-                console.log('Total events loaded:', futureEvents.length, '(filtered from', events.length, 'total)');
-                console.log('Events by region:', Object.entries(regionsData).map(([key, data]) => `${key}: ${data.events.length}`).join(', '));
-                
-                document.getElementById("last-updated").innerHTML =
-                    '⏱️ Last updated: ' + new Date().toLocaleTimeString("en-AU") +
-                    '<span style="margin-left: 15px;">·</span>' +
-                    '<a href="../sync/" style="margin-left: 15px; color: #999; text-decoration: none;">Sync to Calendar</a>';
-                
-                // Auto-select first region
-                const firstRegionKey = stateConfig.regionOrder[0];
-                if (firstRegionKey) {
-                    const firstRegionBtn = document.querySelector(`button[onclick*="'${firstRegionKey}'"]`);
-                    if (firstRegionBtn) {
-                        setTimeout(() => showRegion(firstRegionBtn, firstRegionKey), 100);
-                    }
+                // If not categorized, add to default region
+                if (!categorized && stateConfig.defaultRegion) {
+                    const startDate = event.startDate ? new Date(event.startDate) : new Date();
+                    regionsData[stateConfig.defaultRegion].events.push({
+                        name: event.name,
+                        date: startDate.toLocaleDateString("en-AU", { month: 'short', day: 'numeric' }),
+                        desc: event.venue ? `${event.venue.name}, ${event.venue.address}` : "TBC",
+                        registrationURL: event.registrationURL,
+                        highlight: isHighlight,
+                        startDate: event.startDate,
+                        fullData: event // Store full event data for modal
+                    });
+                }
+            });
+            
+            // Sort events within each region by date
+            for (const region of Object.values(regionsData)) {
+                region.events.sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
+            }
+            
+            // Debug logging
+            console.log('Total events loaded:', futureEvents.length, '(filtered from', events.length, 'total)');
+            console.log('Events by region:', Object.entries(regionsData).map(([key, data]) => `${key}: ${data.events.length}`).join(', '));
+            
+            document.getElementById("last-updated").innerHTML =
+                '⏱️ Last updated: ' + new Date().toLocaleTimeString("en-AU") +
+                '<span style="margin-left: 15px;">·</span>' +
+                '<a href="../sync/" style="margin-left: 15px; color: #999; text-decoration: none;">Sync to Calendar</a>';
+            
+            // Auto-select first region
+            const firstRegionKey = stateConfig.regionOrder[0];
+            if (firstRegionKey) {
+                const firstRegionBtn = document.querySelector(`button[onclick*="'${firstRegionKey}'"]`);
+                if (firstRegionBtn) {
+                    setTimeout(() => showRegion(firstRegionBtn, firstRegionKey), 100);
+                }
+            }
+        }
+
+        $.ajax({
+            url: `../data/${stateCodeLower}-events.json`,
+            type: "GET",
+            dataType: "json",
+            success: function (stateEvents) {
+                if (stateCode === 'NAT') {
+                    processEvents(stateEvents);
+                } else {
+                    $.ajax({
+                        url: '../data/nat-events.json', type: "GET", dataType: "json",
+                        success: function (natEvents) {
+                            const seenIds = new Set(stateEvents.map(e => e.id));
+                            const uniqueNatEvents = natEvents.filter(e => !seenIds.has(e.id));
+                            processEvents(stateEvents.concat(uniqueNatEvents));
+                        },
+                        error: function () { processEvents(stateEvents); }
+                    });
                 }
             },
             error: function (err) {
