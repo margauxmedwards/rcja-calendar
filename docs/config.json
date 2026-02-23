@@ -174,5 +174,22 @@
     },
     "defaultRegion": "north-island",
     "regionOrder": ["north-island", "south-island", "nationals"]
+  },
+  "NAT": {
+    "enabled": true,
+    "title": "RCJA – National Events Calendar",
+    "stateCode": "NAT",
+    "subRegions": {
+      "competitions": {
+        "title": "Competitions",
+        "keywords": ["championship", "national", "nationals", "spike prime challenge", "australia season launch"]
+      },
+      "workshops": {
+        "title": "Workshops",
+        "keywords": ["workshop"]
+      }
+    },
+    "defaultRegion": "competitions",
+    "regionOrder": ["competitions", "workshops"]
   }
 }
