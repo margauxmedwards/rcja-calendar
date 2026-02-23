@@ -252,7 +252,7 @@ function categorizeEvent(event, stateConfig) {
   ).toLowerCase();
 
   for (const [key, region] of Object.entries(stateConfig.subRegions)) {
-    if (region.keywords.some(kw => searchText.includes(kw))) {
+    if (region.keywords.some(kw => searchText.includes(kw.toLowerCase()))) {
       return key;
     }
   }
