@@ -1,16 +1,30 @@
-name: Fetch and Cache Events
+name: Fetch Events and Deploy
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Run every 6 hours
+    - cron: '0 * * * *'  # Run every hour
   workflow_dispatch:  # Allow manual trigger
   push:
     branches:
       - main
+    paths-ignore:
+      - 'docs/data/**'  # Ignore bot commits to prevent infinite loops
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  fetch-events:
+  fetch-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,13 +38,37 @@ jobs:
         run: mkdir -p docs/data
 
       - name: Fetch and cache events
+        run: node .github/scripts/fetch-events.js
+
+      - name: Check for changes
+        id: check-changes
         run: |
-          node .github/scripts/fetch-events.js
+          git add docs/data/
+          if git diff --staged --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
 
       - name: Commit and push changes
+        if: steps.check-changes.outputs.changed == 'true'
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add docs/data/
-          git diff --staged --quiet || git commit -m "chore: Update cached events data"
-          git push origin main || echo "Nothing to push"
+          git commit -m "chore: Update cached events data"
+          git push origin main
+
+      - name: Setup Pages
+        if: steps.check-changes.outputs.changed == 'true' || github.event_name == 'push'
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        if: steps.check-changes.outputs.changed == 'true' || github.event_name == 'push'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './docs'
+
+      - name: Deploy to GitHub Pages
+        if: steps.check-changes.outputs.changed == 'true' || github.event_name == 'push'
+        id: deployment
+        uses: actions/deploy-pages@v4
