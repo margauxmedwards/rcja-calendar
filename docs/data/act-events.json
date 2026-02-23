@@ -668,7 +668,7 @@
       "email": "Graham.Stock@robocupjunior.org.au"
     },
     "venue": null,
-    "bleachedEventDetails": "Workshop for all teams and mentors competing in the 2026 ACT State Competition.\n\nTime: 10am - 2pm\n\n***Robot hardware will not be provided, teams must provide their own ***",
+    "bleachedEventDetails": "Workshop for all teams and mentors competing in the 2026 ACT State Competition.\n\nTime: 5pm - 7pm\n\n***Robot hardware will not be provided, teams must provide their own ***",
     "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_579f533b-112f-4409-a27e-93b11d4203dc.jpg",
     "registrationURL": "https://enter.robocupjunior.org.au/events/329",
     "availabledivisions": [
@@ -699,6 +699,145 @@
       {
         "name": "Soccer",
         "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 330,
+    "state": 4,
+    "name": "ACT 2026 State Competition",
+    "eventType": "competition",
+    "cmsEventId": null,
+    "startDate": "2026-08-29",
+    "endDate": "2026-08-29",
+    "registrationsOpenDate": "2026-02-23",
+    "registrationsCloseDate": "2026-08-21",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 85,
+    "paymentDueDate": "2026-08-21",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 85,
+    "workshopStudentEntryFee": 85,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Graham Stock",
+      "email": "Graham.Stock@robocupjunior.org.au"
+    },
+    "venue": null,
+    "bleachedEventDetails": "Welcome to the 2026 ACT State Competition, where we will be hosting all teams for a day of competition and learning.\n\nDate: Saturday August 29\nTime: 9am - 4pm (Teams may arrive from 8:30am)\n\n*** More event details will be sent to registered teams closer to the event ***",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_579f533b-112f-4409-a27e-93b11d4203dc.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/330",
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Intermediate Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Lightweight Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
         "division_maxRegistrationsPerSchool": null,
         "division_maxRegistrationsForDivision": null,
         "division_billingType": "event",
