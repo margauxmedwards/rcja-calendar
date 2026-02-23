@@ -1442,20 +1442,20 @@
     ]
   },
   {
-    "id": 317,
+    "id": 321,
     "state": 7,
-    "name": "Gladstone Sumo Competition",
+    "name": "Gladstone Regional Competition (Line/OnStage/Sumo)",
     "eventType": "competition",
     "cmsEventId": null,
-    "startDate": "2026-04-01",
-    "endDate": "2026-04-01",
+    "startDate": "2026-03-26",
+    "endDate": "2026-03-26",
     "registrationsOpenDate": "2026-03-02",
     "registrationsCloseDate": "2026-03-23",
     "maxMembersPerTeam": 4,
     "event_maxRegistrationsPerSchool": null,
     "event_maxRegistrationsForEvent": null,
     "entryFeeIncludesGST": true,
-    "competition_defaultEntryFee": 50,
+    "competition_defaultEntryFee": 0,
     "paymentDueDate": null,
     "competition_billingType": "team",
     "competition_specialRateNumber": null,
@@ -1473,35 +1473,10 @@
       "name": "Chanel College",
       "address": "11 Paterson Street, Gladstone QLD 4680"
     },
-    "bleachedEventDetails": "More details coming soon. Registration opens 2nd March and ends 23rd March",
+    "bleachedEventDetails": "Gladstone Regionals Competition for Rescue Line and OnStage and Sumo. More information coming coming.\nRegistration opens 2nd March, closes 23rd March",
     "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
-    "registrationURL": "https://enter.robocupjunior.org.au/events/317",
-    "availabledivisions": [
-      {
-        "name": "Sumo - Intermediate",
-        "description": "Sumo (Intermediate)",
-        "division_maxRegistrationsPerSchool": null,
-        "division_maxRegistrationsForDivision": null,
-        "division_billingType": "event",
-        "division_entryFee": null
-      },
-      {
-        "name": "Sumo - Primary",
-        "description": "",
-        "division_maxRegistrationsPerSchool": null,
-        "division_maxRegistrationsForDivision": null,
-        "division_billingType": "event",
-        "division_entryFee": null
-      },
-      {
-        "name": "Sumo - Secondary",
-        "description": "",
-        "division_maxRegistrationsPerSchool": null,
-        "division_maxRegistrationsForDivision": null,
-        "division_billingType": "event",
-        "division_entryFee": null
-      }
-    ]
+    "registrationURL": "https://enter.robocupjunior.org.au/events/321",
+    "availabledivisions": []
   },
   {
     "id": 318,
@@ -1522,7 +1497,7 @@
     "competition_billingType": "team",
     "competition_specialRateNumber": null,
     "competition_specialRateFee": null,
-    "workshopTeacherEntryFee": 25,
+    "workshopTeacherEntryFee": 0,
     "workshopStudentEntryFee": 0,
     "eventSurchargeAmount": 0,
     "surchargeName": "Surcharge",
@@ -1783,43 +1758,6 @@
         "division_entryFee": null
       }
     ]
-  },
-  {
-    "id": 321,
-    "state": 7,
-    "name": "Gladstone Regionals Competition (Line, OnStage)",
-    "eventType": "competition",
-    "cmsEventId": null,
-    "startDate": "2026-06-15",
-    "endDate": "2026-06-15",
-    "registrationsOpenDate": "2026-05-01",
-    "registrationsCloseDate": "2026-06-10",
-    "maxMembersPerTeam": 4,
-    "event_maxRegistrationsPerSchool": null,
-    "event_maxRegistrationsForEvent": null,
-    "entryFeeIncludesGST": true,
-    "competition_defaultEntryFee": 50,
-    "paymentDueDate": null,
-    "competition_billingType": "team",
-    "competition_specialRateNumber": null,
-    "competition_specialRateFee": null,
-    "workshopTeacherEntryFee": 50,
-    "workshopStudentEntryFee": 50,
-    "eventSurchargeAmount": 0,
-    "surchargeName": "Surcharge",
-    "surchargeEventDescription": "",
-    "directEnquiriesTo": {
-      "fullName": "tracey iki",
-      "email": "tracey_iki@rok.catholic.edu.au"
-    },
-    "venue": {
-      "name": "Chanel College",
-      "address": "11 Paterson Street, Gladstone QLD 4680"
-    },
-    "bleachedEventDetails": "Gladstone Regionals Competition for Rescue Line and OnStage. More information coming coming.\nRegistration opens 1st May, closes 10th June",
-    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
-    "registrationURL": "https://enter.robocupjunior.org.au/events/321",
-    "availabledivisions": []
   },
   {
     "id": 322,
