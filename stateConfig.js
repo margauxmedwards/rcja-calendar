@@ -24,7 +24,7 @@ const stateConfigs = {
       },
       "nationals": { 
         title: "Nationals", 
-        keywords: ["national", "nationals"] 
+        keywords: ["national", "nationals", "spike prime challenge", "australia season launch"] 
       },
     },
     defaultRegion: "seq", // Where uncategorized state events default to
@@ -45,7 +45,7 @@ const stateConfigs = {
       },
       "nationals": { 
         title: "Nationals", 
-        keywords: ["national", "nationals"] 
+        keywords: ["national", "nationals", "spike prime challenge", "australia season launch"] 
       },
     },
     defaultRegion: "metro",
@@ -74,7 +74,7 @@ const stateConfigs = {
       },
       "nationals": { 
         title: "Nationals", 
-        keywords: ["national", "nationals"] 
+        keywords: ["national", "nationals", "spike prime challenge", "australia season launch"] 
       },
     },
     defaultRegion: "sydney",
@@ -95,7 +95,7 @@ const stateConfigs = {
       },
       "nationals": { 
         title: "Nationals", 
-        keywords: ["national", "nationals"] 
+        keywords: ["national", "nationals", "spike prime challenge", "australia season launch"] 
       },
     },
     defaultRegion: "metro",
@@ -116,7 +116,7 @@ const stateConfigs = {
       },
       "nationals": { 
         title: "Nationals", 
-        keywords: ["national", "nationals"] 
+        keywords: ["national", "nationals", "spike prime challenge", "australia season launch"] 
       },
     },
     defaultRegion: "perth",
@@ -133,7 +133,7 @@ const stateConfigs = {
       },
       "nationals": { 
         title: "Nationals", 
-        keywords: ["national", "nationals"] 
+        keywords: ["national", "nationals", "spike prime challenge", "australia season launch"] 
       },
     },
     defaultRegion: "canberra",
@@ -150,7 +150,7 @@ const stateConfigs = {
       },
       "nationals": { 
         title: "Nationals", 
-        keywords: ["national", "nationals"] 
+        keywords: ["national", "nationals", "spike prime challenge", "australia season launch"] 
       },
     },
     defaultRegion: "darwin",
@@ -171,7 +171,7 @@ const stateConfigs = {
       },
       "nationals": { 
         title: "Nationals", 
-        keywords: ["national", "nationals"] 
+        keywords: ["national", "nationals", "spike prime challenge", "australia season launch"] 
       },
     },
     defaultRegion: "north-island",
@@ -192,7 +192,7 @@ const stateConfigs = {
       },
       "nationals": { 
         title: "Nationals", 
-        keywords: ["national", "nationals"] 
+        keywords: ["national", "nationals", "spike prime challenge", "australia season launch"] 
       },
     },
     defaultRegion: "hobart",
