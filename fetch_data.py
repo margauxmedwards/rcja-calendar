@@ -3,7 +3,7 @@ import urllib.request
 import json
 import os
 
-states = ['qld', 'nsw', 'vic', 'sa', 'wa', 'tas', 'act', 'nt']
+states = ['qld', 'nsw', 'vic', 'sa', 'wa', 'tas', 'act', 'nt', 'nz']
 base_url = "https://enter.robocupjunior.org.au/api/v1/public/states"
 output_dir = "docs/data"
 
