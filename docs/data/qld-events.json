@@ -1894,7 +1894,48 @@
     "bleachedEventDetails": "Gladstone Regionals for Rescue Line and OnStage. Registration opens 11th May and closes 8th June",
     "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
     "registrationURL": "https://enter.robocupjunior.org.au/events/333",
-    "availabledivisions": []
+    "availabledivisions": [
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary OnStage",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
   },
   {
     "id": 322,
