@@ -22,9 +22,13 @@ const stateConfigs = {
         title: "Far North QLD", 
         keywords: ["cairns", "fnq", "townsville", "far north"] 
       },
+      "nationals": { 
+        title: "Nationals", 
+        keywords: ["national", "nationals"] 
+      },
     },
-    defaultRegion: "seq", // Where state/national events default to
-    regionOrder: ["seq", "wide-bay", "downs", "fnq"]
+    defaultRegion: "seq", // Where uncategorized state events default to
+    regionOrder: ["seq", "wide-bay", "downs", "fnq", "nationals"]
   },
   
   "VIC": {
@@ -39,9 +43,13 @@ const stateConfigs = {
         title: "Regional Victoria", 
         keywords: ["geelong", "ballarat", "bendigo", "shepparton", "warrnambool", "gippsland"] 
       },
+      "nationals": { 
+        title: "Nationals", 
+        keywords: ["national", "nationals"] 
+      },
     },
     defaultRegion: "metro",
-    regionOrder: ["metro", "regional"]
+    regionOrder: ["metro", "regional", "nationals"]
   },
 
   "NSW": {
@@ -64,9 +72,13 @@ const stateConfigs = {
         title: "Regional NSW", 
         keywords: ["dubbo", "wagga", "albury", "tamworth", "orange", "bathurst", "central west"] 
       },
+      "nationals": { 
+        title: "Nationals", 
+        keywords: ["national", "nationals"] 
+      },
     },
     defaultRegion: "sydney",
-    regionOrder: ["sydney", "hunter", "illawarra", "regional"]
+    regionOrder: ["sydney", "hunter", "illawarra", "regional", "nationals"]
   },
 
   "SA": {
@@ -81,9 +93,13 @@ const stateConfigs = {
         title: "Regional SA", 
         keywords: ["regional", "mount gambier", "port lincoln", "whyalla", "murray bridge"] 
       },
+      "nationals": { 
+        title: "Nationals", 
+        keywords: ["national", "nationals"] 
+      },
     },
     defaultRegion: "metro",
-    regionOrder: ["metro", "regional"]
+    regionOrder: ["metro", "regional", "nationals"]
   },
 
   "WA": {
@@ -98,9 +114,13 @@ const stateConfigs = {
         title: "Regional WA", 
         keywords: ["regional", "bunbury", "albany", "geraldton", "kalgoorlie", "broome"] 
       },
+      "nationals": { 
+        title: "Nationals", 
+        keywords: ["national", "nationals"] 
+      },
     },
     defaultRegion: "perth",
-    regionOrder: ["perth", "regional"]
+    regionOrder: ["perth", "regional", "nationals"]
   },
 
   "ACT": {
@@ -111,9 +131,13 @@ const stateConfigs = {
         title: "Canberra & ACT", 
         keywords: ["canberra", "act", "belconnen", "tuggeranong", "woden", "gungahlin"] 
       },
+      "nationals": { 
+        title: "Nationals", 
+        keywords: ["national", "nationals"] 
+      },
     },
     defaultRegion: "canberra",
-    regionOrder: ["canberra"]
+    regionOrder: ["canberra", "nationals"]
   },
 
   "NT": {
@@ -124,9 +148,34 @@ const stateConfigs = {
         title: "Darwin & NT", 
         keywords: ["darwin", "palmerston", "alice springs", "katherine", "northern territory"] 
       },
+      "nationals": { 
+        title: "Nationals", 
+        keywords: ["national", "nationals"] 
+      },
     },
     defaultRegion: "darwin",
-    regionOrder: ["darwin"]
+    regionOrder: ["darwin", "nationals"]
+  },
+
+  "NZ": {
+    enabled: true,
+    title: "RCJNZ – New Zealand Regional Calendar",
+    subRegions: {
+      "north-island": { 
+        title: "North Island", 
+        keywords: ["auckland", "wellington", "hamilton", "tauranga", "palmerston north", "napier", "hastings", "rotorua", "whangarei"] 
+      },
+      "south-island": { 
+        title: "South Island", 
+        keywords: ["christchurch", "dunedin", "invercargill", "nelson", "queenstown", "timaru"] 
+      },
+      "nationals": { 
+        title: "Nationals", 
+        keywords: ["national", "nationals"] 
+      },
+    },
+    defaultRegion: "north-island",
+    regionOrder: ["north-island", "south-island", "nationals"]
   },
 
   "TAS": {
@@ -141,9 +190,13 @@ const stateConfigs = {
         title: "Regional Tasmania", 
         keywords: ["launceston", "devonport", "burnie", "north", "northwest"] 
       },
+      "nationals": { 
+        title: "Nationals", 
+        keywords: ["national", "nationals"] 
+      },
     },
     defaultRegion: "hobart",
-    regionOrder: ["hobart", "regional"]
+    regionOrder: ["hobart", "regional", "nationals"]
   },
 };
 
