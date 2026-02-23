@@ -1444,7 +1444,7 @@
   {
     "id": 321,
     "state": 7,
-    "name": "Gladstone Regional Competition (Line/OnStage/Sumo)",
+    "name": "Gladstone Regional Sumo Competition",
     "eventType": "competition",
     "cmsEventId": null,
     "startDate": "2026-03-26",
@@ -1861,6 +1861,40 @@
         "division_entryFee": null
       }
     ]
+  },
+  {
+    "id": 333,
+    "state": 7,
+    "name": "Gladstone Regionals Competition (Line, OnStage)",
+    "eventType": "competition",
+    "cmsEventId": null,
+    "startDate": "2026-06-15",
+    "endDate": "2026-06-15",
+    "registrationsOpenDate": "2026-05-11",
+    "registrationsCloseDate": "2026-06-08",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 50,
+    "workshopStudentEntryFee": 50,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "tracey iki",
+      "email": "tracey_iki@rok.catholic.edu.au"
+    },
+    "venue": null,
+    "bleachedEventDetails": "Gladstone Regionals for Rescue Line and OnStage. Registration opens 11th May and closes 8th June",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/333",
+    "availabledivisions": []
   },
   {
     "id": 322,
