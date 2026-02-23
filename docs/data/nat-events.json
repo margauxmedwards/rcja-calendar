@@ -1,0 +1,584 @@
+[
+  {
+    "id": 234,
+    "state": 14,
+    "name": "Spike Prime Challenge",
+    "eventType": "competition",
+    "cmsEventId": "25_NA_SPIKE_32E",
+    "startDate": "2025-07-22",
+    "endDate": "2025-07-22",
+    "registrationsOpenDate": "2025-02-24",
+    "registrationsCloseDate": "2025-07-04",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 30,
+    "paymentDueDate": "2025-07-22",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Karen Binns",
+      "email": "karen.binns@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Virtual Event",
+      "address": ""
+    },
+    "bleachedEventDetails": "<b>PLEASE NOTE THAT ALL REGISTRATIONS AND SUBMISSIONS ARE DUE BY FRIDAY JULY 4TH. \n\nPLEASE ENTER THE DIVISION FOR THE STATE/TERRITORY YOU ARE IN.</b>\n\nTeams should submit their entry by uploading the files to a Google Drive, OneDrive, Dropbox or similar file sharing service, then pasting the public sharing link into a word or notepad file, and uploading against the team in the registration system. Participation Deeds &amp; Mentor Declarations can be uploaded directly into the registration system. \n\nIn your teams submission, ensure you include the teams video, presentation, robot program, participation deed for each team member, mentor declaration and any other files/information you wish to submit.\n\nPlease find the participation deed here:<b> <a href=\"https://www.robocupjunior.org.au/wp-content/uploads/2025/02/RoboCup-Junior-Australia-Participation-Deed-v6.pdf\">Click to download participation deed</a></b>\n\nPlease find the mentor declaration here:<b> <a href=\"https://www.robocupjunior.org.au/wp-content/uploads/2025/02/RoboCup-Junior-Victoria-Mentor-Declaration-v06.pdf\">Click to download mentor declaration</a></b>",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_09ee85bf-4e82-41a2-9ed2-21b88c998b51.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/234",
+    "availabledivisions": [
+      {
+        "name": "Spike Prime Challenge - ACT",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Spike Prime Challenge - NSW",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Spike Prime Challenge - NT",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Spike Prime Challenge - QLD",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Spike Prime Challenge - SA",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Spike Prime Challenge - TAS",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Spike Prime Challenge - VIC",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Spike Prime Challenge - WA",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 235,
+    "state": 4,
+    "name": "Australian Open National Championships",
+    "eventType": "competition",
+    "cmsEventId": "25_NA_AUSTR_C11",
+    "startDate": "2025-10-10",
+    "endDate": "2025-10-12",
+    "registrationsOpenDate": "2025-01-01",
+    "registrationsCloseDate": "2025-09-26",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 135,
+    "paymentDueDate": "2025-10-03",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Graham Stock",
+      "email": "Graham.Stock@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Shirley Smith High School",
+      "address": "2 Rhodanthe Wy, Kenny ACT 2911"
+    },
+    "bleachedEventDetails": "RoboCup Junior Australia and RoboCup Junior ACT are thrilled to announce the return of the Australian National Open Championships to Canberra in 2025!\n\nThis marks an exciting homecoming, as the nation's capital hosts the event for the first time since 2012. While more details will be unveiled in the coming months, get ready to join us for a celebration of robotics and innovation in Canberra!\n\n<a href=\"https://www.canva.com/design/DAGv6Fyhv5o/MpA2OEHnvcdtqWf6ayHQDA/view?utm_content=DAGv6Fyhv5o&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=h56838ac8af\">For all the information you need about the competition, please check out our information pack</a>",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/EventBannerImages/EventBannerImage_c37fc35e-a9eb-4174-9771-c3e9eb962ab8.png",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/235",
+    "availabledivisions": [
+      {
+        "name": "International Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rapidly Manufactured Robot Challenge (RMRC)",
+        "description": "RMRC Competition as run at international level",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Intermediate Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Lightweight Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 308,
+    "state": 14,
+    "name": "RoboCup Junior Australia Season Launch",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-02-23",
+    "endDate": "2026-02-23",
+    "registrationsOpenDate": "2026-02-02",
+    "registrationsCloseDate": "2026-02-23",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": false,
+    "competition_defaultEntryFee": null,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Graham Stock",
+      "email": "Graham.Stock@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Virtual Event",
+      "address": ""
+    },
+    "bleachedEventDetails": "RCJA 2026 Season Launch\n\nJoin us for our 2026 season launch, where you will learn all about RoboCup to prepare you for the 2026 season from challenges, rules and changes, and 2026 event dates in your local region.\n\nRegister here: https://events.teams.microsoft.com/event/3cd4a9dd-d290-4261-886e-4eb637219c34@2a713cb9-ebc0-4dce-bd6f-f1e24947273c\n\nMon, 23 Feb 2026 20:00 - 21:00 (UTC+10:00) Canberra, Melbourne, Sydney\n\nMicrosoft Teams meeting will be sent to all registered participants.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_09ee85bf-4e82-41a2-9ed2-21b88c998b51.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/308",
+    "availabledivisions": [
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Line",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Maze",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Soccer",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 315,
+    "state": 14,
+    "name": "Spike Prime Challenge",
+    "eventType": "competition",
+    "cmsEventId": null,
+    "startDate": "2026-07-22",
+    "endDate": "2026-07-22",
+    "registrationsOpenDate": "2026-02-23",
+    "registrationsCloseDate": "2026-06-26",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 30,
+    "paymentDueDate": "2026-06-26",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 30,
+    "workshopStudentEntryFee": 30,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Karen Binns",
+      "email": "karen.binns@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Virtual Event",
+      "address": ""
+    },
+    "bleachedEventDetails": "<b>PLEASE NOTE THAT ALL REGISTRATIONS AND SUBMISSIONS ARE DUE BY FRIDAY JUNE 26TH. \n\nPLEASE ENTER THE DIVISION FOR THE STATE/TERRITORY YOU ARE IN.</b>\n\nTeams should submit their entry by uploading the files to a Google Drive, OneDrive, Dropbox or similar file sharing service, then pasting the public sharing link into a word or notepad file, and uploading against the team in the registration system. Participation Deeds &amp; Mentor Declarations can be uploaded directly into the registration system. \n\nIn your teams submission, ensure you include the teams video, presentation, robot program, participation deed for each team member, mentor declaration and any other files/information you wish to submit.\n\nPlease find the participation deed here:<b> <a href=\"https://www.robocupjunior.org.au/wp-content/uploads/2025/02/RoboCup-Junior-Australia-Participation-Deed-v6.pdf\">Click to download participation deed</a></b>\n\nPlease find the mentor declaration here:<b> <a href=\"https://www.robocupjunior.org.au/wp-content/uploads/2025/02/RoboCup-Junior-Victoria-Mentor-Declaration-v06.pdf\">Click to download mentor declaration</a></b>",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_09ee85bf-4e82-41a2-9ed2-21b88c998b51.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/315",
+    "availabledivisions": [
+      {
+        "name": "Spike Prime Challenge - ACT",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Spike Prime Challenge - NSW",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Spike Prime Challenge - NT",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Spike Prime Challenge - QLD",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Spike Prime Challenge - SA",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Spike Prime Challenge - TAS",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Spike Prime Challenge - VIC",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Spike Prime Challenge - WA",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 331,
+    "state": 4,
+    "name": "RCJA 2026 Australian Open National Championships",
+    "eventType": "competition",
+    "cmsEventId": null,
+    "startDate": "2026-10-02",
+    "endDate": "2026-10-04",
+    "registrationsOpenDate": "2026-02-23",
+    "registrationsCloseDate": "2026-09-18",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 145,
+    "paymentDueDate": "2026-09-18",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 145,
+    "workshopStudentEntryFee": 145,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Graham Stock",
+      "email": "Graham.Stock@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Shirley Smith High School",
+      "address": "2 Rhodanthe Wy, Kenny ACT 2911"
+    },
+    "bleachedEventDetails": "RoboCup Junior Australia and RoboCup Junior ACT are thrilled to announce the return of the Australian National Open Championships to Canberra in 2026!\n\nAfter a record-breaking 2025 here in the nation's capital, we are excited to once again welcome all Australian teams to Canberra for another thrilling conclusion to the 2026 RoboCup Junior Australia Season.\n\nEvent Times and Days:\n\n- Friday 2 October: Team registration, setup and testing (2pm - 5pm)\n- Saturday 3 October: Competition Day 1 - All challenges (8:30am - 5pm)\n- Sunday 4 October: Competition Day 2 - All challenges (8:30am - 4pm)\n\nAll teachers and mentors are strongly encouraged to sign up as volunteers to help the event run as smoothly as possible. No prior RoboCup judging experience necessary.\n\nVolunteer registration: https://forms.office.com/r/kb8xAjBF8q \n\n*** More event details will be available closer to the event in a public information pack ***",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/EventBannerImages/EventBannerImage_f0f12888-fb1c-46cf-bd8a-edec3cdace21.png",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/331",
+    "availabledivisions": [
+      {
+        "name": "Rapidly Manufactured Robot Challenge (RMRC)",
+        "description": "RMRC Competition as run at international level",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Novice OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open OnStage Performance",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Intermediate Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Mighty Maisy Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Rescue Maze",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Lightweight Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Open Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Simple Simon Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Standard Soccer",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  }
+]
