@@ -502,5 +502,75 @@
         "division_entryFee": null
       }
     ]
+  },
+  {
+    "id": 334,
+    "state": 8,
+    "name": "Workshops WA",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-03-19",
+    "endDate": "2026-03-19",
+    "registrationsOpenDate": "2026-02-25",
+    "registrationsCloseDate": "2026-03-18",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": 0,
+    "event_maxRegistrationsForEvent": 0,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": null,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "RoboCup Junior WA",
+      "email": "wa@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "All Saints' College",
+      "address": "Ewing Ave, Bull Creek WA 6149"
+    },
+    "bleachedEventDetails": "Time: 4:00 pm - 6:00 pm: This is where you will hear about the events we have planned for the year. The event will have an introductory presentation and then break out into workshop groups for each of the challenges: OnStage Performance, Rescue Line, Rescue Maze and Soccer.\n\nStudents are welcome to attend, but this event is targeted for teachers and mentors.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_5a8cc0fd-8c2b-45ec-8c0a-d856b903eddd.png",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/334",
+    "availabledivisions": [
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Line",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Maze",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Soccer",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
   }
 ]
