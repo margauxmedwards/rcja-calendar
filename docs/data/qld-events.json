@@ -1159,7 +1159,7 @@
     },
     "venue": {
       "name": "University of Queensland",
-      "address": "Building 11A, ModWest\r\nhttps://maps.uq.edu.au/?campusId=406&zLevel=0&zoom=18&identifier=1003307028\r\nhttps://share.google/UsbVyFYhKbDyRAULx"
+      "address": "Building 11A, ModWest"
     },
     "bleachedEventDetails": "Link to info pack:\nhttps://www.robocupjunior.org.au/wp-content/uploads/2025/07/QLD-State-Championships-2025-Info-Pack.pdf\n\nNote: Sumo division will be not be running at the State Competition. We invite teams to attend the Redlands Sumo Competition at Ormiston College.",
     "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/EventBannerImages/EventBannerImage_33983c03-5e92-4c04-b195-bf9a0c49abf5.png",
@@ -2189,9 +2189,9 @@
     },
     "venue": {
       "name": "University of Queensland",
-      "address": "Building 11A, ModWest\r\nhttps://maps.uq.edu.au/?campusId=406&zLevel=0&zoom=18&identifier=1003307028\r\nhttps://share.google/UsbVyFYhKbDyRAULx"
+      "address": "Building 11A, ModWest"
     },
-    "bleachedEventDetails": "More event details coming soon! We look forward to you joining our 25th Anniversary Event!\n\n**This is a new venue in 2026**",
+    "bleachedEventDetails": "More event details coming soon! We look forward to you joining our 25th Anniversary Event!\n\n**This is a new venue in 2026**\n\nBuilding 11A, ModWest\n<b><a href=\"https://maps.uq.edu.au/?campusId=406&amp;zLevel=0&amp;zoom=18&amp;identifier=1003307028\">View UQ Campus Map</a></b> ·\n<b><a href=\"https://share.google/UsbVyFYhKbDyRAULx\">Open in Google Maps</a></b>",
     "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_f0456b83-5c38-459c-aec7-19ba720df31f.jpg",
     "registrationURL": "https://enter.robocupjunior.org.au/events/316",
     "availabledivisions": []
