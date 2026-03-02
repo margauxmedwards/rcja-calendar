@@ -503,7 +503,7 @@
                 </div>
                 <div class="item" style="${eventDetails.bleachedEventDetails ? '' : 'display: none'};">
                     <div class="header"><strong>Description:</strong></div>
-                    <div class="content">${eventDetails.bleachedEventDetails.replace("\n", "<br>")}</div>
+                    <div class="content">${(eventDetails.bleachedEventDetails || '').replaceAll("\n", "<br>")}</div>
                 </div>
             </div>
         `);
