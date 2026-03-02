@@ -1546,7 +1546,7 @@
     "event_maxRegistrationsPerSchool": null,
     "event_maxRegistrationsForEvent": null,
     "entryFeeIncludesGST": true,
-    "competition_defaultEntryFee": 10,
+    "competition_defaultEntryFee": 15,
     "paymentDueDate": "2026-05-20",
     "competition_billingType": "team",
     "competition_specialRateNumber": null,
