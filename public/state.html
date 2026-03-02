@@ -237,6 +237,35 @@
             animation: spin 0.8s linear infinite;
         }
 
+        .qld-about {
+            max-width: 950px;
+            margin: 0 auto 20px;
+            padding: 15px 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: none;
+        }
+
+        .qld-about h2 {
+            margin-bottom: 12px;
+            color: #192f59;
+        }
+
+        .qld-about p {
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .qld-social a, .qld-contact a {
+            text-decoration: none;
+            color: #192f59;
+        }
+
+        .qld-social a:hover, .qld-contact a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 768px) {
             .header-bar {
                 padding: 15px;
@@ -262,6 +291,24 @@
             <img src="/favicon-32x32.png" alt="RCJA" style="vertical-align: middle;">
             <span>Loading...</span>
         </h1>
+    </div>
+
+    <div id="qld-about" class="qld-about">
+        <h2>About RoboCup Junior Queensland</h2>
+        <p>
+            RoboCup Junior Queensland (RCJQ) is the Queensland chapter of RoboCup Junior Australia,
+            supporting students through robotics competitions across the state.
+            Visit the <a href="https://www.robocupjunior.org.au/challenge-regions/qld/" target="_blank" rel="noopener">official QLD page</a> to learn more.
+        </p>
+        <p class="qld-contact">
+            📧 Contact: <a href="mailto:qld@robocupjunior.org.au">qld@robocupjunior.org.au</a>
+        </p>
+        <p class="qld-social">
+            🔗 Follow us:
+            <a href="https://www.facebook.com/RoboCupJuniorQld/" target="_blank" rel="noopener">Facebook</a> ·
+            <a href="https://www.instagram.com/robocupjunior.qld/" target="_blank" rel="noopener">Instagram</a> ·
+            <a href="https://www.linkedin.com/company/robocupjuniorqld" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
     </div>
 
     <div id="rcja-state-interactive">
@@ -434,6 +481,9 @@
     }
 
     document.addEventListener("DOMContentLoaded", function () {
+        if (stateCode === 'QLD') {
+            document.getElementById('qld-about').style.display = 'block';
+        }
         loadConfig();
         // Auto-refresh every 5 minutes
         setInterval(loadData, 5 * 60 * 1000);
