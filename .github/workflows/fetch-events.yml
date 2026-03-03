@@ -46,6 +46,9 @@ jobs:
       - name: Fetch and cache events
         run: node .github/scripts/fetch-events.js
 
+      - name: Generate state pages from template
+        run: node .github/scripts/generate-state-pages.js
+
       - name: Check for changes
         id: check-changes
         run: |
