@@ -112,6 +112,13 @@
             border-radius: 8px;
             border-left: 6px solid #9dbd38;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .event-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
         .event-item.state-highlight {
@@ -237,22 +244,33 @@
             animation: spin 0.8s linear infinite;
         }
 
-        @media (max-width: 768px) {
-            .header-bar {
-                padding: 15px;
-            }
-            
-            .header-bar h1 {
-                font-size: 1.2rem;
-            }
+        .state-about {
+            max-width: 950px;
+            margin: 0 auto 20px;
+            padding: 15px 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: none;
+        }
 
-            .region-sidebar {
-                padding: 20px 15px;
-            }
+        .state-about h2 {
+            margin-bottom: 12px;
+            color: #192f59;
+        }
 
-            .event-display {
-                padding: 25px 20px;
-            }
+        .state-about p {
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .state-about a {
+            text-decoration: none;
+            color: #192f59;
+        }
+
+        .state-about a:hover {
+            text-decoration: underline;
         }
 
         /* Modal Styles */
@@ -324,14 +342,22 @@
             margin-bottom: 5px;
         }
 
-        .event-item {
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
+        @media (max-width: 768px) {
+            .header-bar {
+                padding: 15px;
+            }
+            
+            .header-bar h1 {
+                font-size: 1.2rem;
+            }
 
-        .event-item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            .region-sidebar {
+                padding: 20px 15px;
+            }
+
+            .event-display {
+                padding: 25px 20px;
+            }
         }
     </style>
 </head>
@@ -341,6 +367,10 @@
             <img src="../favicon-32x32.png" alt="RCJA" style="vertical-align: middle;">
             <span>Loading...</span>
         </h1>
+    </div>
+
+    <div id="state-about" class="state-about">
+        <!-- State-specific about content will be injected here by JS if available -->
     </div>
 
     <div id="rcja-state-interactive">
@@ -377,6 +407,31 @@
     </div>
 
 <script>
+    // State-specific about section content (shown only for the matching state).
+    // IMPORTANT: All HTML here is developer-controlled static content — not user-generated data.
+    // Do not interpolate any external/user-provided values into these strings.
+    const stateAboutContent = {
+        'QLD': {
+            html: `
+                <h2>About RoboCup Junior Queensland</h2>
+                <p>
+                    RoboCup Junior Queensland (RCJQ) is the Queensland chapter of RoboCup Junior Australia,
+                    supporting students through robotics competitions across the state.
+                    Visit the <a href="https://www.robocupjunior.org.au/challenge-regions/qld/" target="_blank" rel="noopener">official QLD page</a> to learn more.
+                </p>
+                <p>
+                    📧 Contact: <a href="mailto:qld@robocupjunior.org.au">qld@robocupjunior.org.au</a>
+                </p>
+                <p>
+                    🔗 Follow us:
+                    <a href="https://www.facebook.com/RoboCupJuniorQld/" target="_blank" rel="noopener">Facebook</a> ·
+                    <a href="https://www.instagram.com/robocupjunior.qld/" target="_blank" rel="noopener">Instagram</a> ·
+                    <a href="https://www.linkedin.com/company/robocupjuniorqld" target="_blank" rel="noopener">LinkedIn</a>
+                </p>
+            `
+        }
+    };
+
     // Get state code from URL path
     const pathParts = window.location.pathname.split('/').filter(p => p && !p.includes('.'));
     const stateCode = (pathParts[pathParts.length - 1] || 'QLD').toUpperCase();
@@ -646,12 +701,12 @@
         
         // Format enquiries
         const enquiries = data.directEnquiriesTo
-            ? `${data.directEnquiriesTo.fullName} (<a href="mailto:${data.directEnquiriesTo.email}">${data.directEnquiriesTo.email}</a>)`
+            ? `${data.directEnquiriesTo.fullName} (<a href="mailto:${escapeHtml(data.directEnquiriesTo.email)}">${escapeHtml(data.directEnquiriesTo.email)}</a>)`
             : 'See registration link';
         
         // Format venue
         const venue = data.venue
-            ? `${data.venue.name}<br>${data.venue.address}`
+            ? `${escapeHtml(data.venue.name)}<br>${escapeHtml(data.venue.address)}`
             : 'TBC';
         
         modalBody.innerHTML = `
@@ -669,11 +724,11 @@
             </div>
             <div class="modal-detail">
                 <strong>Event Type:</strong>
-                ${data.eventType || 'Competition'}
+                ${escapeHtml(data.eventType || 'Competition')}
             </div>
             <div class="modal-detail">
                 <strong>Available Divisions:</strong>
-                ${divisions}
+                ${escapeHtml(divisions)}
             </div>
             <div class="modal-detail">
                 <strong>Direct Enquiries To:</strong>
@@ -687,7 +742,10 @@
             ${data.bleachedEventDetails ? `
             <div class="modal-detail">
                 <strong>Description:</strong>
-                <div style="white-space: pre-wrap;">${escapeHtml(data.bleachedEventDetails)}</div>
+                <!-- bleachedEventDetails is server-sanitized HTML (via the bleach library on the RCJA Entry System API).
+                     It is safe to render as innerHTML. Do not escape it, as it may contain intentional formatting
+                     such as links, bold text, and lists. -->
+                <div style="white-space: pre-wrap;">${data.bleachedEventDetails}</div>
             </div>` : ''}
         `;
         
@@ -707,6 +765,14 @@
     };
 
     document.addEventListener("DOMContentLoaded", function () {
+        // Show state-specific about section if content exists for this state
+        const aboutContent = stateAboutContent[stateCode];
+        if (aboutContent) {
+            const aboutEl = document.getElementById('state-about');
+            aboutEl.innerHTML = aboutContent.html;
+            aboutEl.style.display = 'block';
+        }
+        
         loadConfig();
         // Auto-refresh every 5 minutes
         setInterval(loadData, 5 * 60 * 1000);
