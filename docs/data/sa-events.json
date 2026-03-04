@@ -194,5 +194,113 @@
         "division_entryFee": null
       }
     ]
+  },
+  {
+    "id": 337,
+    "state": 6,
+    "name": "RCSA Rescue workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-03-25",
+    "endDate": "2026-03-25",
+    "registrationsOpenDate": "2026-03-04",
+    "registrationsCloseDate": "2026-03-23",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Colin Becker",
+      "email": "cbecker@stpeters.sa.edu.au"
+    },
+    "venue": {
+      "name": "St Peters College JS",
+      "address": "Room 6, Junior School\r\nNorth Terrace"
+    },
+    "bleachedEventDetails": "Rescue Line  Workshop (Beginner and Intermediate)\nRobot construction tips\nLine following\nUsing the sensors to make decisions\nTips and pointers of things to consider on a course\nChanges for 2026\n\nPlease bring:\nlaptop or iPad\nrobot if you have one. A pre-constructed robot can be available on the day.\nLunch (a few cafes nearby)",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_b1caf6bd-9899-4d24-984c-7c3d1b575211.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/337",
+    "availabledivisions": [
+      {
+        "name": "Primary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Riley Rover Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Secondary Rescue Line",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 338,
+    "state": 6,
+    "name": "RCSA OnStage workshop",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-03-31",
+    "endDate": "2026-03-31",
+    "registrationsOpenDate": "2026-03-04",
+    "registrationsCloseDate": "2026-03-29",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 0,
+    "paymentDueDate": null,
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 0,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Simon Coad",
+      "email": "simon.coad@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "St Peters College JS",
+      "address": "Room 6, Junior School\r\nNorth Terrace"
+    },
+    "bleachedEventDetails": "An introduction to Onstage\nWhat will be offered - understanding Onstage and the differences between Novice, open, Onstage2 / tips and tricks / using different robots / programming a simple performance",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_b1caf6bd-9899-4d24-984c-7c3d1b575211.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/338",
+    "availabledivisions": [
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
   }
 ]
