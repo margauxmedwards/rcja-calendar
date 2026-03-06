@@ -1530,7 +1530,32 @@
     "bleachedEventDetails": "Brisbane Workshop - Introduction to Maze, Soccer and Rescue\n20th Apr T2W1 Monday\nStudents please bring their own food\nLunch and morning tea provided for teachers",
     "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_28421735-0cee-4f51-8a17-4511b323fd55.png",
     "registrationURL": "https://enter.robocupjunior.org.au/events/339",
-    "availabledivisions": []
+    "availabledivisions": [
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Maze",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Soccer",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
   },
   {
     "id": 340,
@@ -1561,13 +1586,38 @@
       "email": "qld@robocupjunior.org.au"
     },
     "venue": {
-      "name": "Calamvale Community College",
-      "address": "11 Hamish St, Calamvale, QLD 4116"
+      "name": "Stretton State College",
+      "address": "990 Gowan Rd, Stretton Qld 4116"
     },
     "bleachedEventDetails": "Brisbane workshop for Introduction to Rescue Line and Sumo",
     "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
     "registrationURL": "https://enter.robocupjunior.org.au/events/340",
-    "availabledivisions": []
+    "availabledivisions": [
+      {
+        "name": "Sumo - Primary",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Sumo - Secondary",
+        "description": "",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Line",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
   },
   {
     "id": 318,
