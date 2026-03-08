@@ -2064,7 +2064,7 @@
   {
     "id": 322,
     "state": 7,
-    "name": "FNQ Regionals Competition (Line OnStage)",
+    "name": "FNQ Regional RoboCup Junior Competition",
     "eventType": "competition",
     "cmsEventId": null,
     "startDate": "2026-06-20",
@@ -2075,7 +2075,7 @@
     "event_maxRegistrationsPerSchool": null,
     "event_maxRegistrationsForEvent": null,
     "entryFeeIncludesGST": true,
-    "competition_defaultEntryFee": 50,
+    "competition_defaultEntryFee": 35,
     "paymentDueDate": null,
     "competition_billingType": "team",
     "competition_specialRateNumber": null,
@@ -2089,9 +2089,12 @@
       "fullName": "Liam McComb",
       "email": "lrmcc0@eq.edu.au"
     },
-    "venue": null,
-    "bleachedEventDetails": "Far Northern Queensland Regionals Competition (Line, OnStage)\nMore details to follow. Registrations open 11th May, close 12th June.",
-    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_76077de9-10a1-4526-9d7a-5b2e76e6454b.jpg",
+    "venue": {
+      "name": "Redlynch State College",
+      "address": "Jungara Road, Redlynch, QLD 4870"
+    },
+    "bleachedEventDetails": "Far Northern Queensland Regionals Competition held at Redlynch State College.\nDivisions TBC (at least Line, Sumo, Onstage). Registration Fee TBC.\nMore details to follow. \nRegistrations open 11th May, close 12th June.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_68f93da9-95fb-4ae0-869f-0df75ac23142.jpg",
     "registrationURL": "https://enter.robocupjunior.org.au/events/322",
     "availabledivisions": []
   },
