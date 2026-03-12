@@ -254,5 +254,42 @@
         "division_entryFee": 10
       }
     ]
+  },
+  {
+    "id": 341,
+    "state": 3,
+    "name": "Robocup Junior Competition 2026",
+    "eventType": "competition",
+    "cmsEventId": null,
+    "startDate": "2026-06-11",
+    "endDate": "2026-06-11",
+    "registrationsOpenDate": "2026-05-01",
+    "registrationsCloseDate": "2026-06-01",
+    "maxMembersPerTeam": 4,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 5,
+    "paymentDueDate": "2026-06-01",
+    "competition_billingType": "student",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 5,
+    "workshopStudentEntryFee": 5,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Jacqueline Leah",
+      "email": "jacqueline.leah@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "Girraween Primary School",
+      "address": "25 Carruth Avenue Girraween NT 0836"
+    },
+    "bleachedEventDetails": "Onstage, Simple Simon Soccer and Riley Rover Rescue will be offered.",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/VenueImages/VenueImage_c7a5081a-d9e6-4448-a25d-1fd2521c9dd4.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/341",
+    "availabledivisions": []
   }
 ]
