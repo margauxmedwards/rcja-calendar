@@ -734,5 +734,145 @@
         "division_entryFee": null
       }
     ]
+  },
+  {
+    "id": 342,
+    "state": 2,
+    "name": "Student Workshop (May 16)",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-05-16",
+    "endDate": "2026-05-16",
+    "registrationsOpenDate": "2026-03-15",
+    "registrationsCloseDate": "2026-05-13",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 10,
+    "paymentDueDate": "2026-05-16",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 10,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Pam Grover",
+      "email": "pam.grover@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "St John's Catholic Primary School, Auburn",
+      "address": "77 Queen St, Auburn NSW 2144\r\nhttps://maps.app.goo.gl/6yGdS48h5CgvwHwM8"
+    },
+    "bleachedEventDetails": "Audience: Open to all Primary and High School students, teachers and mentors. Parents welcome.\nWhere: St John's Catholic Primary School, 77 Queen St, Auburn NSW 2144\nWhen: Saturday 16th May 2026 1.00 to 4.00\nEntry: $10 per student (please pay via PayPal in the invoice). \n\nAll students must have adult supervision. When bringing students we recommend 1 teacher per division.\n\nBring Robots, laptops, chargers, a snack &amp; drinks. Tea &amp; coffee available for adults.\nDET schools: laptops must be first logged into at a DET school to allow access elsewhere\n\nThis session will assist teachers and students to prepare for the Robocup Junior\nOn-Stage, Rescue, Maze &amp; Soccer events. It will be a valuable workshop for those at beginners to\nintermediate level experienced in RoboCup Junior who are looking to further their skills and understanding.\n\nNote and directions: TBA\nRisk assessment: TBA",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_c2869487-51c2-4e2d-8ec1-12600a46fd5b.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/342",
+    "availabledivisions": [
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Line",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Maze",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Soccer",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
+  },
+  {
+    "id": 343,
+    "state": 2,
+    "name": "Student Workshop 2 (June 27)",
+    "eventType": "workshop",
+    "cmsEventId": null,
+    "startDate": "2026-06-27",
+    "endDate": "2026-06-27",
+    "registrationsOpenDate": "2026-03-15",
+    "registrationsCloseDate": "2026-06-24",
+    "maxMembersPerTeam": 0,
+    "event_maxRegistrationsPerSchool": null,
+    "event_maxRegistrationsForEvent": null,
+    "entryFeeIncludesGST": true,
+    "competition_defaultEntryFee": 10,
+    "paymentDueDate": "2026-06-27",
+    "competition_billingType": "team",
+    "competition_specialRateNumber": null,
+    "competition_specialRateFee": null,
+    "workshopTeacherEntryFee": 0,
+    "workshopStudentEntryFee": 10,
+    "eventSurchargeAmount": 0,
+    "surchargeName": "Surcharge",
+    "surchargeEventDescription": "",
+    "directEnquiriesTo": {
+      "fullName": "Pam Grover",
+      "email": "pam.grover@robocupjunior.org.au"
+    },
+    "venue": {
+      "name": "MLC Burwood",
+      "address": "MLC School, Rowley St, Burwood NSW 2134\r\nhttps://maps.app.goo.gl/2FVKfGkC27Dif4f57"
+    },
+    "bleachedEventDetails": "Audience: Open to all Primary and High School students, teachers and mentors. Parents welcome.\nWhere: MLC School, Rowley St, Burwood NSW 2134\nWhen: Saturday 27th June 2026 1.00 to 4.00\nEntry: $10 per student (please pay via PayPal in the invoice). \n\nAll students must have adult supervision. When bringing students we recommend 1 teacher per division.\n\nBring Robots, laptops, chargers, a snack &amp; drinks. Tea &amp; coffee available for adults.\nDET schools: laptops must be first logged into at a DET school to allow access elsewhere\n\nThis session will assist teachers and students to prepare for the Robocup Junior\nOn-Stage, Rescue, Maze &amp; Soccer events. It will be a valuable workshop for those at beginners to\nintermediate level experienced in RoboCup Junior who are looking to further their skills and understanding.\n\nNote and directions: TBA\nRisk assessment: TBA",
+    "effectiveBannerImageURL": "https://rcjaregistration-prod-public.s3.amazonaws.com/DefaultEventImages/DefaultEventImage_c2869487-51c2-4e2d-8ec1-12600a46fd5b.jpg",
+    "registrationURL": "https://enter.robocupjunior.org.au/events/343",
+    "availabledivisions": [
+      {
+        "name": "OnStage",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Line",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Rescue Maze",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      },
+      {
+        "name": "Soccer",
+        "description": "Workshop Division",
+        "division_maxRegistrationsPerSchool": null,
+        "division_maxRegistrationsForDivision": null,
+        "division_billingType": "event",
+        "division_entryFee": null
+      }
+    ]
   }
 ]
